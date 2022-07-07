@@ -1,0 +1,55 @@
+
+ Net freshwater budget 
+   fwf    = -3.21880E+09 m3 =  -0.00010 Sv
+
+   zarea = 3.57005E+14
+   zvol  = 1.32653E+18
+
+ Mean sea level : 
+   at nit000 = -1.02608E+13 m3 
+   at nitend = -1.68558E+13 m3 
+   diff      = -6.59497E+12 m3 =  -0.20913 Sv
+   mean sea level elevation    =  -0.04721 m
+
+ Anomaly of salinity content : 
+   at nit000 =  6.84485E+17 psu.m3 
+   at nitend =  6.83928E+17 psu.m3 
+   diff      = -5.56526E+14 psu.m3
+
+ Mean salinity : 
+   at nit000 =  35.24254 psu 
+   at nitend =  35.24212 psu 
+   diff      =  -0.00042 psu
+   S-SLevitus=   0.51558 psu
+
+ Gibraltar : 
+   Flux entrant (Sv) :   0.5056
+   Flux sortant (Sv) :  -0.4806
+   T entrant (deg)   :  16.6799
+   T sortant (deg)   :  13.7346
+   S entrant (psu)   :  36.0172
+   S sortant (psu)   :  37.8521
+
+ Cadiz : 
+   Flux entrant (Sv) :   1.8747
+   Flux sortant (Sv) :  -1.8494
+   T entrant (deg)   :  15.0586
+   T sortant (deg)   :  12.4407
+   S entrant (psu)   :  35.8601
+   S sortant (psu)   :  35.9009
+
+ Bab el Mandeb : 
+   Flux entrant (Sv) :   0.1293
+   Flux sortant (Sv) :  -0.1522
+   T entrant (deg)   :  24.5577
+   T sortant (deg)   :  26.3424
+   S entrant (psu)   :  37.1010
+   S sortant (psu)   :  36.4057
+
+ Baltic : 
+   Flux entrant (Sv) :   0.0420
+   Flux sortant (Sv) :  -0.0520
+   T entrant (deg)   :   4.6323
+   T sortant (deg)   :   6.0667
+   S entrant (psu)   :   8.6505
+   S sortant (psu)   :  11.3330

@@ -1,0 +1,379 @@
+
+Currently Loaded Modules:
+  1) gmp/6.1.2          6) netcdf/4.7.4/parallel/gcc-openmpi
+  2) mpfr/4.0.2         7) hdf5/1.10.6/gcc-openmpi
+  3) mpc/1.1.0          8) java/jdk1.8.0_231
+  4) cmake/3.16.0-rc4   9) mpi/openmpi/4.0.3/gcc/ib
+  5) gcc/9.2.0         10) perl/5.30.2
+
+ 
+
++ cpus=48
++ echo '---- Inputs ' 2020 2020 /gpfs/home/mep22dku/scratch/ModelRuns/TOM12_TJ_NC02 NC02 dev
++ YEARP=
++ cd /gpfs/home/mep22dku/scratch/ModelRuns/TOM12_TJ_NC02
++ export MYAPP=./opa
++ MYAPP=./opa
++ date
+++ date
++ START='Thu 24 Mar 09:58:16 GMT 2022'
++ mpirun -np 48 ./opa
++ date
+++ date
++ FINISH='Thu 24 Mar 10:38:39 GMT 2022'
++ yearPrevious=2020
++ yearToRun=2021
+++ awk '{printf "%.8d\n", $0}' time.step
++ timestep=01483725
++ mv time.step old.time.step
++ '[' -f ORCA2_01483725_restart_0000.nc ']'
++ mv restart_trc.nc restart_trc_first_year.nc
+mv: cannot stat ‘restart_trc.nc’: No such file or directory
++ mv restart.nc restart_first_year.nc
+mv: cannot stat ‘restart.nc’: No such file or directory
++ mv restart_ice_in.nc restart_ice_in_first_year.nc
+mv: cannot stat ‘restart_ice_in.nc’: No such file or directory
++ mv EMPave.dat EMPave_2020.dat
++ ln -fs namelist_ref_all_years namelist_ref
++ (( i=0 ))
++ (( i<48 ))
++ ((  i < 10  ))
++ proc=00
++ ln -fs ORCA2_01483725_restart_0000.nc restart_0000.nc
++ ln -fs ORCA2_01483725_restart_ice_0000.nc restart_ice_in_0000.nc
++ ln -fs ORCA2_01483725_restart_trc_0000.nc restart_trc_0000.nc
++ (( i++  ))
++ (( i<48 ))
++ ((  i < 10  ))
++ proc=01
++ ln -fs ORCA2_01483725_restart_0001.nc restart_0001.nc
++ ln -fs ORCA2_01483725_restart_ice_0001.nc restart_ice_in_0001.nc
++ ln -fs ORCA2_01483725_restart_trc_0001.nc restart_trc_0001.nc
++ (( i++  ))
++ (( i<48 ))
++ ((  i < 10  ))
++ proc=02
++ ln -fs ORCA2_01483725_restart_0002.nc restart_0002.nc
++ ln -fs ORCA2_01483725_restart_ice_0002.nc restart_ice_in_0002.nc
++ ln -fs ORCA2_01483725_restart_trc_0002.nc restart_trc_0002.nc
++ (( i++  ))
++ (( i<48 ))
++ ((  i < 10  ))
++ proc=03
++ ln -fs ORCA2_01483725_restart_0003.nc restart_0003.nc
++ ln -fs ORCA2_01483725_restart_ice_0003.nc restart_ice_in_0003.nc
++ ln -fs ORCA2_01483725_restart_trc_0003.nc restart_trc_0003.nc
++ (( i++  ))
++ (( i<48 ))
++ ((  i < 10  ))
++ proc=04
++ ln -fs ORCA2_01483725_restart_0004.nc restart_0004.nc
++ ln -fs ORCA2_01483725_restart_ice_0004.nc restart_ice_in_0004.nc
++ ln -fs ORCA2_01483725_restart_trc_0004.nc restart_trc_0004.nc
++ (( i++  ))
++ (( i<48 ))
++ ((  i < 10  ))
++ proc=05
++ ln -fs ORCA2_01483725_restart_0005.nc restart_0005.nc
++ ln -fs ORCA2_01483725_restart_ice_0005.nc restart_ice_in_0005.nc
++ ln -fs ORCA2_01483725_restart_trc_0005.nc restart_trc_0005.nc
++ (( i++  ))
++ (( i<48 ))
++ ((  i < 10  ))
++ proc=06
++ ln -fs ORCA2_01483725_restart_0006.nc restart_0006.nc
++ ln -fs ORCA2_01483725_restart_ice_0006.nc restart_ice_in_0006.nc
++ ln -fs ORCA2_01483725_restart_trc_0006.nc restart_trc_0006.nc
++ (( i++  ))
++ (( i<48 ))
++ ((  i < 10  ))
++ proc=07
++ ln -fs ORCA2_01483725_restart_0007.nc restart_0007.nc
++ ln -fs ORCA2_01483725_restart_ice_0007.nc restart_ice_in_0007.nc
++ ln -fs ORCA2_01483725_restart_trc_0007.nc restart_trc_0007.nc
++ (( i++  ))
++ (( i<48 ))
++ ((  i < 10  ))
++ proc=08
++ ln -fs ORCA2_01483725_restart_0008.nc restart_0008.nc
++ ln -fs ORCA2_01483725_restart_ice_0008.nc restart_ice_in_0008.nc
++ ln -fs ORCA2_01483725_restart_trc_0008.nc restart_trc_0008.nc
++ (( i++  ))
++ (( i<48 ))
++ ((  i < 10  ))
++ proc=09
++ ln -fs ORCA2_01483725_restart_0009.nc restart_0009.nc
++ ln -fs ORCA2_01483725_restart_ice_0009.nc restart_ice_in_0009.nc
++ ln -fs ORCA2_01483725_restart_trc_0009.nc restart_trc_0009.nc
++ (( i++  ))
++ (( i<48 ))
++ ((  i < 10  ))
++ proc=10
++ ln -fs ORCA2_01483725_restart_0010.nc restart_0010.nc
++ ln -fs ORCA2_01483725_restart_ice_0010.nc restart_ice_in_0010.nc
++ ln -fs ORCA2_01483725_restart_trc_0010.nc restart_trc_0010.nc
++ (( i++  ))
++ (( i<48 ))
++ ((  i < 10  ))
++ proc=11
++ ln -fs ORCA2_01483725_restart_0011.nc restart_0011.nc
++ ln -fs ORCA2_01483725_restart_ice_0011.nc restart_ice_in_0011.nc
++ ln -fs ORCA2_01483725_restart_trc_0011.nc restart_trc_0011.nc
++ (( i++  ))
++ (( i<48 ))
++ ((  i < 10  ))
++ proc=12
++ ln -fs ORCA2_01483725_restart_0012.nc restart_0012.nc
++ ln -fs ORCA2_01483725_restart_ice_0012.nc restart_ice_in_0012.nc
++ ln -fs ORCA2_01483725_restart_trc_0012.nc restart_trc_0012.nc
++ (( i++  ))
++ (( i<48 ))
++ ((  i < 10  ))
++ proc=13
++ ln -fs ORCA2_01483725_restart_0013.nc restart_0013.nc
++ ln -fs ORCA2_01483725_restart_ice_0013.nc restart_ice_in_0013.nc
++ ln -fs ORCA2_01483725_restart_trc_0013.nc restart_trc_0013.nc
++ (( i++  ))
++ (( i<48 ))
++ ((  i < 10  ))
++ proc=14
++ ln -fs ORCA2_01483725_restart_0014.nc restart_0014.nc
++ ln -fs ORCA2_01483725_restart_ice_0014.nc restart_ice_in_0014.nc
++ ln -fs ORCA2_01483725_restart_trc_0014.nc restart_trc_0014.nc
++ (( i++  ))
++ (( i<48 ))
++ ((  i < 10  ))
++ proc=15
++ ln -fs ORCA2_01483725_restart_0015.nc restart_0015.nc
++ ln -fs ORCA2_01483725_restart_ice_0015.nc restart_ice_in_0015.nc
++ ln -fs ORCA2_01483725_restart_trc_0015.nc restart_trc_0015.nc
++ (( i++  ))
++ (( i<48 ))
++ ((  i < 10  ))
++ proc=16
++ ln -fs ORCA2_01483725_restart_0016.nc restart_0016.nc
++ ln -fs ORCA2_01483725_restart_ice_0016.nc restart_ice_in_0016.nc
++ ln -fs ORCA2_01483725_restart_trc_0016.nc restart_trc_0016.nc
++ (( i++  ))
++ (( i<48 ))
++ ((  i < 10  ))
++ proc=17
++ ln -fs ORCA2_01483725_restart_0017.nc restart_0017.nc
++ ln -fs ORCA2_01483725_restart_ice_0017.nc restart_ice_in_0017.nc
++ ln -fs ORCA2_01483725_restart_trc_0017.nc restart_trc_0017.nc
++ (( i++  ))
++ (( i<48 ))
++ ((  i < 10  ))
++ proc=18
++ ln -fs ORCA2_01483725_restart_0018.nc restart_0018.nc
++ ln -fs ORCA2_01483725_restart_ice_0018.nc restart_ice_in_0018.nc
++ ln -fs ORCA2_01483725_restart_trc_0018.nc restart_trc_0018.nc
++ (( i++  ))
++ (( i<48 ))
++ ((  i < 10  ))
++ proc=19
++ ln -fs ORCA2_01483725_restart_0019.nc restart_0019.nc
++ ln -fs ORCA2_01483725_restart_ice_0019.nc restart_ice_in_0019.nc
++ ln -fs ORCA2_01483725_restart_trc_0019.nc restart_trc_0019.nc
++ (( i++  ))
++ (( i<48 ))
++ ((  i < 10  ))
++ proc=20
++ ln -fs ORCA2_01483725_restart_0020.nc restart_0020.nc
++ ln -fs ORCA2_01483725_restart_ice_0020.nc restart_ice_in_0020.nc
++ ln -fs ORCA2_01483725_restart_trc_0020.nc restart_trc_0020.nc
++ (( i++  ))
++ (( i<48 ))
++ ((  i < 10  ))
++ proc=21
++ ln -fs ORCA2_01483725_restart_0021.nc restart_0021.nc
++ ln -fs ORCA2_01483725_restart_ice_0021.nc restart_ice_in_0021.nc
++ ln -fs ORCA2_01483725_restart_trc_0021.nc restart_trc_0021.nc
++ (( i++  ))
++ (( i<48 ))
++ ((  i < 10  ))
++ proc=22
++ ln -fs ORCA2_01483725_restart_0022.nc restart_0022.nc
++ ln -fs ORCA2_01483725_restart_ice_0022.nc restart_ice_in_0022.nc
++ ln -fs ORCA2_01483725_restart_trc_0022.nc restart_trc_0022.nc
++ (( i++  ))
++ (( i<48 ))
++ ((  i < 10  ))
++ proc=23
++ ln -fs ORCA2_01483725_restart_0023.nc restart_0023.nc
++ ln -fs ORCA2_01483725_restart_ice_0023.nc restart_ice_in_0023.nc
++ ln -fs ORCA2_01483725_restart_trc_0023.nc restart_trc_0023.nc
++ (( i++  ))
++ (( i<48 ))
++ ((  i < 10  ))
++ proc=24
++ ln -fs ORCA2_01483725_restart_0024.nc restart_0024.nc
++ ln -fs ORCA2_01483725_restart_ice_0024.nc restart_ice_in_0024.nc
++ ln -fs ORCA2_01483725_restart_trc_0024.nc restart_trc_0024.nc
++ (( i++  ))
++ (( i<48 ))
++ ((  i < 10  ))
++ proc=25
++ ln -fs ORCA2_01483725_restart_0025.nc restart_0025.nc
++ ln -fs ORCA2_01483725_restart_ice_0025.nc restart_ice_in_0025.nc
++ ln -fs ORCA2_01483725_restart_trc_0025.nc restart_trc_0025.nc
++ (( i++  ))
++ (( i<48 ))
++ ((  i < 10  ))
++ proc=26
++ ln -fs ORCA2_01483725_restart_0026.nc restart_0026.nc
++ ln -fs ORCA2_01483725_restart_ice_0026.nc restart_ice_in_0026.nc
++ ln -fs ORCA2_01483725_restart_trc_0026.nc restart_trc_0026.nc
++ (( i++  ))
++ (( i<48 ))
++ ((  i < 10  ))
++ proc=27
++ ln -fs ORCA2_01483725_restart_0027.nc restart_0027.nc
++ ln -fs ORCA2_01483725_restart_ice_0027.nc restart_ice_in_0027.nc
++ ln -fs ORCA2_01483725_restart_trc_0027.nc restart_trc_0027.nc
++ (( i++  ))
++ (( i<48 ))
++ ((  i < 10  ))
++ proc=28
++ ln -fs ORCA2_01483725_restart_0028.nc restart_0028.nc
++ ln -fs ORCA2_01483725_restart_ice_0028.nc restart_ice_in_0028.nc
++ ln -fs ORCA2_01483725_restart_trc_0028.nc restart_trc_0028.nc
++ (( i++  ))
++ (( i<48 ))
++ ((  i < 10  ))
++ proc=29
++ ln -fs ORCA2_01483725_restart_0029.nc restart_0029.nc
++ ln -fs ORCA2_01483725_restart_ice_0029.nc restart_ice_in_0029.nc
++ ln -fs ORCA2_01483725_restart_trc_0029.nc restart_trc_0029.nc
++ (( i++  ))
++ (( i<48 ))
++ ((  i < 10  ))
++ proc=30
++ ln -fs ORCA2_01483725_restart_0030.nc restart_0030.nc
++ ln -fs ORCA2_01483725_restart_ice_0030.nc restart_ice_in_0030.nc
++ ln -fs ORCA2_01483725_restart_trc_0030.nc restart_trc_0030.nc
++ (( i++  ))
++ (( i<48 ))
++ ((  i < 10  ))
++ proc=31
++ ln -fs ORCA2_01483725_restart_0031.nc restart_0031.nc
++ ln -fs ORCA2_01483725_restart_ice_0031.nc restart_ice_in_0031.nc
++ ln -fs ORCA2_01483725_restart_trc_0031.nc restart_trc_0031.nc
++ (( i++  ))
++ (( i<48 ))
++ ((  i < 10  ))
++ proc=32
++ ln -fs ORCA2_01483725_restart_0032.nc restart_0032.nc
++ ln -fs ORCA2_01483725_restart_ice_0032.nc restart_ice_in_0032.nc
++ ln -fs ORCA2_01483725_restart_trc_0032.nc restart_trc_0032.nc
++ (( i++  ))
++ (( i<48 ))
++ ((  i < 10  ))
++ proc=33
++ ln -fs ORCA2_01483725_restart_0033.nc restart_0033.nc
++ ln -fs ORCA2_01483725_restart_ice_0033.nc restart_ice_in_0033.nc
++ ln -fs ORCA2_01483725_restart_trc_0033.nc restart_trc_0033.nc
++ (( i++  ))
++ (( i<48 ))
++ ((  i < 10  ))
++ proc=34
++ ln -fs ORCA2_01483725_restart_0034.nc restart_0034.nc
++ ln -fs ORCA2_01483725_restart_ice_0034.nc restart_ice_in_0034.nc
++ ln -fs ORCA2_01483725_restart_trc_0034.nc restart_trc_0034.nc
++ (( i++  ))
++ (( i<48 ))
++ ((  i < 10  ))
++ proc=35
++ ln -fs ORCA2_01483725_restart_0035.nc restart_0035.nc
++ ln -fs ORCA2_01483725_restart_ice_0035.nc restart_ice_in_0035.nc
++ ln -fs ORCA2_01483725_restart_trc_0035.nc restart_trc_0035.nc
++ (( i++  ))
++ (( i<48 ))
++ ((  i < 10  ))
++ proc=36
++ ln -fs ORCA2_01483725_restart_0036.nc restart_0036.nc
++ ln -fs ORCA2_01483725_restart_ice_0036.nc restart_ice_in_0036.nc
++ ln -fs ORCA2_01483725_restart_trc_0036.nc restart_trc_0036.nc
++ (( i++  ))
++ (( i<48 ))
++ ((  i < 10  ))
++ proc=37
++ ln -fs ORCA2_01483725_restart_0037.nc restart_0037.nc
++ ln -fs ORCA2_01483725_restart_ice_0037.nc restart_ice_in_0037.nc
++ ln -fs ORCA2_01483725_restart_trc_0037.nc restart_trc_0037.nc
++ (( i++  ))
++ (( i<48 ))
++ ((  i < 10  ))
++ proc=38
++ ln -fs ORCA2_01483725_restart_0038.nc restart_0038.nc
++ ln -fs ORCA2_01483725_restart_ice_0038.nc restart_ice_in_0038.nc
++ ln -fs ORCA2_01483725_restart_trc_0038.nc restart_trc_0038.nc
++ (( i++  ))
++ (( i<48 ))
++ ((  i < 10  ))
++ proc=39
++ ln -fs ORCA2_01483725_restart_0039.nc restart_0039.nc
++ ln -fs ORCA2_01483725_restart_ice_0039.nc restart_ice_in_0039.nc
++ ln -fs ORCA2_01483725_restart_trc_0039.nc restart_trc_0039.nc
++ (( i++  ))
++ (( i<48 ))
++ ((  i < 10  ))
++ proc=40
++ ln -fs ORCA2_01483725_restart_0040.nc restart_0040.nc
++ ln -fs ORCA2_01483725_restart_ice_0040.nc restart_ice_in_0040.nc
++ ln -fs ORCA2_01483725_restart_trc_0040.nc restart_trc_0040.nc
++ (( i++  ))
++ (( i<48 ))
++ ((  i < 10  ))
++ proc=41
++ ln -fs ORCA2_01483725_restart_0041.nc restart_0041.nc
++ ln -fs ORCA2_01483725_restart_ice_0041.nc restart_ice_in_0041.nc
++ ln -fs ORCA2_01483725_restart_trc_0041.nc restart_trc_0041.nc
++ (( i++  ))
++ (( i<48 ))
++ ((  i < 10  ))
++ proc=42
++ ln -fs ORCA2_01483725_restart_0042.nc restart_0042.nc
++ ln -fs ORCA2_01483725_restart_ice_0042.nc restart_ice_in_0042.nc
++ ln -fs ORCA2_01483725_restart_trc_0042.nc restart_trc_0042.nc
++ (( i++  ))
++ (( i<48 ))
++ ((  i < 10  ))
++ proc=43
++ ln -fs ORCA2_01483725_restart_0043.nc restart_0043.nc
++ ln -fs ORCA2_01483725_restart_ice_0043.nc restart_ice_in_0043.nc
++ ln -fs ORCA2_01483725_restart_trc_0043.nc restart_trc_0043.nc
++ (( i++  ))
++ (( i<48 ))
++ ((  i < 10  ))
++ proc=44
++ ln -fs ORCA2_01483725_restart_0044.nc restart_0044.nc
++ ln -fs ORCA2_01483725_restart_ice_0044.nc restart_ice_in_0044.nc
++ ln -fs ORCA2_01483725_restart_trc_0044.nc restart_trc_0044.nc
++ (( i++  ))
++ (( i<48 ))
++ ((  i < 10  ))
++ proc=45
++ ln -fs ORCA2_01483725_restart_0045.nc restart_0045.nc
++ ln -fs ORCA2_01483725_restart_ice_0045.nc restart_ice_in_0045.nc
++ ln -fs ORCA2_01483725_restart_trc_0045.nc restart_trc_0045.nc
++ (( i++  ))
++ (( i<48 ))
++ ((  i < 10  ))
++ proc=46
++ ln -fs ORCA2_01483725_restart_0046.nc restart_0046.nc
++ ln -fs ORCA2_01483725_restart_ice_0046.nc restart_ice_in_0046.nc
++ ln -fs ORCA2_01483725_restart_trc_0046.nc restart_trc_0046.nc
++ (( i++  ))
++ (( i<48 ))
++ ((  i < 10  ))
++ proc=47
++ ln -fs ORCA2_01483725_restart_0047.nc restart_0047.nc
++ ln -fs ORCA2_01483725_restart_ice_0047.nc restart_ice_in_0047.nc
++ ln -fs ORCA2_01483725_restart_trc_0047.nc restart_trc_0047.nc
++ (( i++  ))
++ (( i<48 ))
++ ln -fs EMPave_2020.dat EMPave_old.dat
++ sbatch -J tidy --export=ALL,modelDir=/gpfs/home/mep22dku/scratch/ModelRuns/TOM12_TJ_NC02,yearToTidy=2020,Model=dev tidyupJob
++ '[' -f submit.2021 ']'
++ '[' 2020 -lt 2020 ']'

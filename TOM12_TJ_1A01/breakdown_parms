@@ -1,0 +1,354 @@
+
+# Parameters for breaking down the run into outputs
+# The mask, containing volume and areas for each pixel 
+
+BasinMask:/gpfs/data/greenocean/software/resources/breakdown/basin_mask.nc
+WOAMask:/gpfs/data/greenocean/software/resources/breakdown/WOAmask.nc
+RegionMask:/gpfs/data/greenocean/software/resources/breakdown/clq_basin_masks_ORCA.nc
+RECCAPmask:/gpfs/data/greenocean/software/resources/breakdown/RECCAP2_region_masks_all_v20210412_ORCA.nc
+Meshmask:/gpfs/data/greenocean/software/resources/breakdown/mesh_mask3_6_low_res.nc
+AncillaryData:/gpfs/data/greenocean/software/resources/breakdown/AncillaryData_v2.nc
+
+# # # # List of variables to be totalled over globe. Surface integration. Apply units
+# # # # Unit options: PgCarbonPerYrFlux, PerYr, 
+
+Surface:Cflx,PgCarbonPerYr,-180;180,-90;90,total
+Surface:Cflx,PgCarbonPerYr,Region,0,Arctic
+Surface:Cflx,PgCarbonPerYr,Region,1,N_Atl
+Surface:Cflx,PgCarbonPerYr,Region,2,N_Pac
+Surface:Cflx,PgCarbonPerYr,Region,3,Equ_N
+Surface:Cflx,PgCarbonPerYr,Region,4,Equ
+Surface:Cflx,PgCarbonPerYr,Region,5,Equ_S
+Surface:Cflx,PgCarbonPerYr,Region,6,SO_Atl
+Surface:Cflx,PgCarbonPerYr,Region,7,SO_Pac
+Surface:Cflx,PgCarbonPerYr,Region,8,SO_Ind
+
+Avg:Fer,0,9,1/giga,-180;180,-90;90,total
+Avg:Fer,0,9,1/giga,Region,0,Arctic
+Avg:Fer,0,9,1/giga,Region,1,N_Atl
+Avg:Fer,0,9,1/giga,Region,2,N_Pac
+Avg:Fer,0,9,1/giga,Region,3,Equ_N
+Avg:Fer,0,9,1/giga,Region,4,Equ
+Avg:Fer,0,9,1/giga,Region,5,Equ_S
+Avg:Fer,0,9,1/giga,Region,6,SO_Atl
+Avg:Fer,0,9,1/giga,Region,7,SO_Pac
+Avg:Fer,0,9,1/giga,Region,8,SO_Ind
+
+# Avg:Si,0,9,1/giga,-180;180,-90;90,total
+# Avg:Si,0,9,1/giga,Region,0,Arctic
+# Avg:Si,0,9,1/giga,Region,1,N_Atl
+# Avg:Si,0,9,1/giga,Region,2,N_Pac
+# Avg:Si,0,9,1/giga,Region,3,Equ_N
+# Avg:Si,0,9,1/giga,Region,4,Equ
+# Avg:Si,0,9,1/giga,Region,5,Equ_S
+# Avg:Si,0,9,1/giga,Region,6,SO_Atl
+# Avg:Si,0,9,1/giga,Region,7,SO_Pac
+# Avg:Si,0,9,1/giga,Region,8,SO_Ind
+
+# Avg:NO3,0,9,1/giga,-180;180,-90;90,total
+# Avg:NO3,0,9,1/giga,Region,0,Arctic
+# Avg:NO3,0,9,1/giga,Region,1,N_Atl
+# Avg:NO3,0,9,1/giga,Region,2,N_Pac
+# Avg:NO3,0,9,1/giga,Region,3,Equ_N
+# Avg:NO3,0,9,1/giga,Region,4,Equ
+# Avg:NO3,0,9,1/giga,Region,5,Equ_S
+# Avg:NO3,0,9,1/giga,Region,6,SO_Atl
+# Avg:NO3,0,9,1/giga,Region,7,SO_Pac
+# Avg:NO3,0,9,1/giga,Region,8,SO_Ind
+
+# Avg:PO4,0,9,1/giga,-180;180,-90;90,total
+# Avg:PO4,0,9,1/giga,Region,0,Arctic
+# Avg:PO4,0,9,1/giga,Region,1,N_Atl
+# Avg:PO4,0,9,1/giga,Region,2,N_Pac
+# Avg:PO4,0,9,1/giga,Region,3,Equ_N
+# Avg:PO4,0,9,1/giga,Region,4,Equ
+# Avg:PO4,0,9,1/giga,Region,5,Equ_S
+# Avg:PO4,0,9,1/giga,Region,6,SO_Atl
+# Avg:PO4,0,9,1/giga,Region,7,SO_Pac
+# Avg:PO4,0,9,1/giga,Region,8,SO_Ind
+
+Volume:PPT,PgCarbonPerYr,-180;180,-90;90,total
+Volume:PPT,PgCarbonPerYr,Region,0,Arctic
+Volume:PPT,PgCarbonPerYr,Region,1,N_Atl
+Volume:PPT,PgCarbonPerYr,Region,2,N_Pac
+Volume:PPT,PgCarbonPerYr,Region,3,Equ_N
+Volume:PPT,PgCarbonPerYr,Region,4,Equ
+Volume:PPT,PgCarbonPerYr,Region,5,Equ_S
+Volume:PPT,PgCarbonPerYr,Region,6,SO_Atl
+Volume:PPT,PgCarbonPerYr,Region,7,SO_Pac
+Volume:PPT,PgCarbonPerYr,Region,8,SO_Ind
+
+# Map:TChl
+
+Avg:TChl,0,9,1/giga,-180;180,-90;90,total
+Avg:TChl,0,9,1/giga,Region,0,Arctic
+Avg:TChl,0,9,1/giga,Region,1,N_Atl
+Avg:TChl,0,9,1/giga,Region,2,N_Pac
+Avg:TChl,0,9,1/giga,Region,3,Equ_N
+Avg:TChl,0,9,1/giga,Region,4,Equ
+Avg:TChl,0,9,1/giga,Region,5,Equ_S
+Avg:TChl,0,9,1/giga,Region,6,SO_Atl
+Avg:TChl,0,9,1/giga,Region,7,SO_Pac
+Avg:TChl,0,9,1/giga,Region,8,SO_Ind
+
+# Export
+# Volume:EXP,PgCarbonPerYr,-180;180,-90;90,total
+# Volume:EXP,PgCarbonPerYr,Region,0,Arctic
+# Volume:EXP,PgCarbonPerYr,Region,1,N_Atl
+# Volume:EXP,PgCarbonPerYr,Region,2,N_Pac
+# Volume:EXP,PgCarbonPerYr,Region,3,Equ_N
+# Volume:EXP,PgCarbonPerYr,Region,4,Equ
+# Volume:EXP,PgCarbonPerYr,Region,5,Equ_S
+# Volume:EXP,PgCarbonPerYr,Region,6,SO_Atl
+# Volume:EXP,PgCarbonPerYr,Region,7,SO_Pac
+# Volume:EXP,PgCarbonPerYr,Region,8,SO_Ind
+
+Level:EXP,9,PgCarbonPerYr,-180;180,-90;90,total
+Level:EXP,9,PgCarbonPerYr,Region,0,Arctic
+Level:EXP,9,PgCarbonPerYr,Region,1,N_Atl
+Level:EXP,9,gCarbonPerYr,Region,2,N_Pac
+Level:EXP,9,PgCarbonPerYr,Region,3,Equ_N
+Level:EXP,9,PgCarbonPerYr,Region,4,Equ
+Level:EXP,9,PgCarbonPerYr,Region,5,Equ_S
+Level:EXP,9,PgCarbonPerYr,Region,6,SO_Atl
+Level:EXP,9,PgCarbonPerYr,Region,7,SO_Pac
+Level:EXP,9,PgCarbonPerYr,Region,8,SO_Ind
+
+# Integration:ExpARA,0,9,raw,-180;180,-90;90,total
+# Integration:ExpARA,0,9,raw,Region,0,Arctic
+# Integration:ExpARA,0,9,raw,Region,1,N_Atl
+# Integration:ExpARA,0,9,raw,Region,2,N_Pac
+# Integration:ExpARA,0,9,raw,Region,3,Equ_N
+# Integration:ExpARA,0,9,raw,Region,4,Equ
+# Integration:ExpARA,0,9,raw,Region,5,Equ_S
+# Integration:ExpARA,0,9,raw,Region,6,SO_Atl
+# Integration:ExpARA,0,9,raw,Region,7,SO_Pac
+# Integration:ExpARA,0,9,raw,Region,8,SO_Ind
+
+# PFTs
+
+# BAC, PRO, PTE, MES, GEL, MAC, DIA, MIX, COC, PIC, PHA, FIX, 
+
+# Avg:BAC,0,9,1/giga,-180;180,-90;90,total
+# Avg:BAC,0,9,1/giga,Region,0,Arctic
+# Avg:BAC,0,9,1/giga,Region,1,N_Atl
+# Avg:BAC,0,9,1/giga,Region,2,N_Pac
+# Avg:BAC,0,9,1/giga,Region,3,Equ_N
+# Avg:BAC,0,9,1/giga,Region,4,Equ
+# Avg:BAC,0,9,1/giga,Region,5,Equ_S
+# Avg:BAC,0,9,1/giga,Region,6,SO_Atl
+# Avg:BAC,0,9,1/giga,Region,7,SO_Pac
+# Avg:BAC,0,9,1/giga,Region,8,SO_Ind
+
+# Avg:PRO,0,9,1/giga,-180;180,-90;90,total
+# Avg:PRO,0,9,1/giga,Region,0,Arctic
+# Avg:PRO,0,9,1/giga,Region,1,N_Atl
+# Avg:PRO,0,9,1/giga,Region,2,N_Pac
+# Avg:PRO,0,9,1/giga,Region,3,Equ_N
+# Avg:PRO,0,9,1/giga,Region,4,Equ
+# Avg:PRO,0,9,1/giga,Region,5,Equ_S
+# Avg:PRO,0,9,1/giga,Region,6,SO_Atl
+# Avg:PRO,0,9,1/giga,Region,7,SO_Pac
+# Avg:PRO,0,9,1/giga,Region,8,SO_Ind
+
+# Avg:PTE,0,9,1/giga,-180;180,-90;90,total
+# Avg:PTE,0,9,1/giga,Region,0,Arctic
+# Avg:PTE,0,9,1/giga,Region,1,N_Atl
+# Avg:PTE,0,9,1/giga,Region,2,N_Pac
+# Avg:PTE,0,9,1/giga,Region,3,Equ_N
+# Avg:PTE,0,9,1/giga,Region,4,Equ
+# Avg:PTE,0,9,1/giga,Region,5,Equ_S
+# Avg:PTE,0,9,1/giga,Region,6,SO_Atl
+# Avg:PTE,0,9,1/giga,Region,7,SO_Pac
+# Avg:PTE,0,9,1/giga,Region,8,SO_Ind
+
+# Avg:MES,0,9,1/giga,-180;180,-90;90,total
+# Avg:MES,0,9,1/giga,Region,0,Arctic
+# Avg:MES,0,9,1/giga,Region,1,N_Atl
+# Avg:MES,0,9,1/giga,Region,2,N_Pac
+# Avg:MES,0,9,1/giga,Region,3,Equ_N
+# Avg:MES,0,9,1/giga,Region,4,Equ
+# Avg:MES,0,9,1/giga,Region,5,Equ_S
+# Avg:MES,0,9,1/giga,Region,6,SO_Atl
+# Avg:MES,0,9,1/giga,Region,7,SO_Pac
+# Avg:MES,0,9,1/giga,Region,8,SO_Ind
+
+# Avg:GEL,0,9,1/giga,-180;180,-90;90,total
+# Avg:GEL,0,9,1/giga,Region,0,Arctic
+# Avg:GEL,0,9,1/giga,Region,1,N_Atl
+# Avg:GEL,0,9,1/giga,Region,2,N_Pac
+# Avg:GEL,0,9,1/giga,Region,3,Equ_N
+# Avg:GEL,0,9,1/giga,Region,4,Equ
+# Avg:GEL,0,9,1/giga,Region,5,Equ_S
+# Avg:GEL,0,9,1/giga,Region,6,SO_Atl
+# Avg:GEL,0,9,1/giga,Region,7,SO_Pac
+# Avg:GEL,0,9,1/giga,Region,8,SO_Ind
+
+# Avg:MAC,0,9,1/giga,-180;180,-90;90,total
+# Avg:MAC,0,9,1/giga,Region,0,Arctic
+# Avg:MAC,0,9,1/giga,Region,1,N_Atl
+# Avg:MAC,0,9,1/giga,Region,2,N_Pac
+# Avg:MAC,0,9,1/giga,Region,3,Equ_N
+# Avg:MAC,0,9,1/giga,Region,4,Equ
+# Avg:MAC,0,9,1/giga,Region,5,Equ_S
+# Avg:MAC,0,9,1/giga,Region,6,SO_Atl
+# Avg:MAC,0,9,1/giga,Region,7,SO_Pac
+# Avg:MAC,0,9,1/giga,Region,8,SO_Ind
+
+# Avg:DIA,0,9,1/giga,-180;180,-90;90,total
+# Avg:DIA,0,9,1/giga,Region,0,Arctic
+# Avg:DIA,0,9,1/giga,Region,1,N_Atl
+# Avg:DIA,0,9,1/giga,Region,2,N_Pac
+# Avg:DIA,0,9,1/giga,Region,3,Equ_N
+# Avg:DIA,0,9,1/giga,Region,4,Equ
+# Avg:DIA,0,9,1/giga,Region,5,Equ_S
+# Avg:DIA,0,9,1/giga,Region,6,SO_Atl
+# Avg:DIA,0,9,1/giga,Region,7,SO_Pac
+# Avg:DIA,0,9,1/giga,Region,8,SO_Ind
+
+# Avg:MIX,0,9,1/giga,-180;180,-90;90,total
+# Avg:MIX,0,9,1/giga,Region,0,Arctic
+# Avg:MIX,0,9,1/giga,Region,1,N_Atl
+# Avg:MIX,0,9,1/giga,Region,2,N_Pac
+# Avg:MIX,0,9,1/giga,Region,3,Equ_N
+# Avg:MIX,0,9,1/giga,Region,4,Equ
+# Avg:MIX,0,9,1/giga,Region,5,Equ_S
+# Avg:MIX,0,9,1/giga,Region,6,SO_Atl
+# Avg:MIX,0,9,1/giga,Region,7,SO_Pac
+# Avg:MIX,0,9,1/giga,Region,8,SO_Ind
+
+# Avg:COC,0,9,1/giga,-180;180,-90;90,total
+# Avg:COC,0,9,1/giga,Region,0,Arctic
+# Avg:COC,0,9,1/giga,Region,1,N_Atl
+# Avg:COC,0,9,1/giga,Region,2,N_Pac
+# Avg:COC,0,9,1/giga,Region,3,Equ_N
+# Avg:COC,0,9,1/giga,Region,4,Equ
+# Avg:COC,0,9,1/giga,Region,5,Equ_S
+# Avg:COC,0,9,1/giga,Region,6,SO_Atl
+# Avg:COC,0,9,1/giga,Region,7,SO_Pac
+# Avg:COC,0,9,1/giga,Region,8,SO_Ind
+
+# Avg:PIC,0,9,1/giga,-180;180,-90;90,total
+# Avg:PIC,0,9,1/giga,Region,0,Arctic
+# Avg:PIC,0,9,1/giga,Region,1,N_Atl
+# Avg:PIC,0,9,1/giga,Region,2,N_Pac
+# Avg:PIC,0,9,1/giga,Region,3,Equ_N
+# Avg:PIC,0,9,1/giga,Region,4,Equ
+# Avg:PIC,0,9,1/giga,Region,5,Equ_S
+# Avg:PIC,0,9,1/giga,Region,6,SO_Atl
+# Avg:PIC,0,9,1/giga,Region,7,SO_Pac
+# Avg:PIC,0,9,1/giga,Region,8,SO_Ind
+
+# Avg:PHA,0,9,1/giga,-180;180,-90;90,total
+# Avg:PHA,0,9,1/giga,Region,0,Arctic
+# Avg:PHA,0,9,1/giga,Region,1,N_Atl
+# Avg:PHA,0,9,1/giga,Region,2,N_Pac
+# Avg:PHA,0,9,1/giga,Region,3,Equ_N
+# Avg:PHA,0,9,1/giga,Region,4,Equ
+# Avg:PHA,0,9,1/giga,Region,5,Equ_S
+# Avg:PHA,0,9,1/giga,Region,6,SO_Atl
+# Avg:PHA,0,9,1/giga,Region,7,SO_Pac
+# Avg:PHA,0,9,1/giga,Region,8,SO_Ind
+
+# Avg:FIX,0,9,1/giga,-180;180,-90;90,total
+# Avg:FIX,0,9,1/giga,Region,0,Arctic
+# Avg:FIX,0,9,1/giga,Region,1,N_Atl
+# Avg:FIX,0,9,1/giga,Region,2,N_Pac
+# Avg:FIX,0,9,1/giga,Region,3,Equ_N
+# Avg:FIX,0,9,1/giga,Region,4,Equ
+# Avg:FIX,0,9,1/giga,Region,5,Equ_S
+# Avg:FIX,0,9,1/giga,Region,6,SO_Atl
+# Avg:FIX,0,9,1/giga,Region,7,SO_Pac
+# Avg:FIX,0,9,1/giga,Region,8,SO_Ind
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Volume:Cflx,unknown,-180;180,-90;90,total
+# Integration:Cflx,9,10,PgCarbonPerYr,-180;180,-90;90,total
+# Total:Cflx,1/giga,-180;180,-90;90,total
+
+# # List of variables to be totalled over globe. Volume integration over all depths
+# # Volume:volQA,unknown,-180;180,-90;90,QA
+# Volume:PPT,PgCarbonPerYr,-180;180,60;90,N
+# Volume:PPT,PgCarbonPerYr,-180;180,-90;-60,S
+# Volume:PPT,PgCarbonPerYr,-180;180,-90;90,total
+# Volume:PPT,PgCarbonPerYr,-180;180,-30;30,eq
+# # Volume:GRAMIC,PgCarbonPerYr,-180;180,-90;90,total
+# # Volume:GRAMES,PgCarbonPerYr,-180;180,-90;90,total
+# # Volume:GRAMICPHY,PgCarbonPerYr,-180;180,-90;90,total
+# # Volume:GRAMESPHY,PgCarbonPerYr,-180;180,-90;90,total
+# # Volume:PRO,TgCarbonPerYr,-180;180,-90;90,total
+# # Volume:MES,TgCarbonPerYr,-180;180,-90;90,total
+# # Volume:MAC,TgCarbonPerYr,-180;180,-90;90,total
+# # Volume:DIA,TgCarbonPerYr,-180;180,-90;90,total
+# # Volume:DIA,TgCarbonPerYr,-180;180,-70;70,sub
+# # Volume:DIA,TgCarbonPerYr,-180;180,-30;30,eq
+# # Volume:MIX,TgCarbonPerYr,-180;180,-90;90,total
+# Volume:COC,TgCarbonPerYr,-180;180,-90;90,total
+# # Volume:PIC,TgCarbonPerYr,-180;180,-90;90,total
+# # Volume:PHA,TgCarbonPerYr,-180;180,-90;90,total
+# # Volume:FIX,TgCarbonPerYr,-180;180,-90;90,total
+# # Volume:BAC,TgCarbonPerYr,-180;180,-90;90,total
+# # Volume:DOC,TgCarbonPerYr,-180;180,-90;90,total
+# # Volume:POC,TgCarbonPerYr,-180;180,-90;90,total
+# # Volume:GOC,TgCarbonPerYr,-180;180,-90;90,total
+
+# # List of variables. Depth intergration over <var>, <levels from 0=surface>, <level to, included>
+# # remember we use zero-indexing, not 1-indexing in original fortran code!!
+# # Integration:levQA,9,10,unknown,-180;180,-90;90,qa
+# Integration:EXP,9,10,PgCarbonPerYr,-180;180,-90;90,total
+# Integration:EXP,9,9,PgCarbonPerYr,-180;180,-30;30,eq
+
+# # List of variables to be totalled but maintain concentration (i.e. sum of each variable volume averages)
+# # just list variable names and the last one is the unit conversion
+# # Total:sumQA+sumQA+sumQA,unknown,-180;180,-90;90,qa
+# Total:TChl,1/giga,-180;180,-90;90,total
+# Total:CCHL+DCHL+NCHL,1/giga,-180;180,-90;90,total
+
+# # List of observation comparisions: Obs data, obs varaible, model variable, depth in data(0=surface), depth in model, gamma (T/F), lon_from;lon_to, lat_from;lat_to
+# # add variables in the model with a +
+
+# Observations:SOCAT,fco2_ave_weighted,pCO2,0,0,F,-180;180,-90;90,socat
+# # Observations:SOCAT,fco2_ave_weighted,pCO2,0,0,F,-110;100,-30;30,eqSocat
+
+# # Observations:SOCAT,salinity_ave_weighted,sosaline,0,0,-180;180,-90;90,socat
+# Observations:SOCAT,sst_ave_weighted,sosstsst,0,0,F,-180;180,-90;90,socat
+# Observations:GLODAP_talk,talk,Alkalini,2,2,F,-180;180,-90;90,glodap
+# Observations:GLODAP_tco2,tco2,DIC,0,0,F,-180;180,-90;90,glodap
+# Observations:occci,CHL,TChl,0,0,F,-180;180,-90;90,glodap
+
+# # List of Additional analysis Measures
+# # Options are: 
+# # Property:NorthSouthRatio 
+# # name, model variable(s), depthFrom, depthTo, obs data, obs var name, lon_from;lon_to, lat_from;lat_to, key (no spaces)
+# Property:Bloom,TChl,0,2,-180;180,60;90,NBloom
+# Property:Bloom,TChl,0,2,-180;180,-90;-60,SBloom
+# # Property:Bloom,NCHL+CCHL+NCHL,0,5,-180;180,-90;90,deeperBloom
+# Property:Bloom,TChl,0,2,-110;100,-30;30,eqBloom
+
+# Property:Trophic,DIA+MIX+COC+PIC+PHA+FIX,PRO,MES+MAC+GEL,0,2,-180;180,60;90,NPyramid
+# Property:Trophic,DIA+MIX+COC+PIC+PHA+FIX,PRO,MES+MAC+GEL,0,2,-180;180,-90;-60,SPyramid
+# Property:Trophic,DIA+MIX+COC+PIC+PHA+FIX,PRO,MES+MAC+GEL,0,2,-180;180,-30;30,eqPyramid

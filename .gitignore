@@ -1,0 +1,5 @@
+*.nc
+*.vscode/*
+*/*log*
+*/*breakdown*
+*/*EMP*

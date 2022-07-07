@@ -1,0 +1,21 @@
+
+Currently Loaded Modules:
+  1) gmp/6.1.2          6) netcdf/4.7.4/parallel/gcc-openmpi
+  2) mpfr/4.0.2         7) hdf5/1.10.6/gcc-openmpi
+  3) mpc/1.1.0          8) java/jdk1.8.0_231
+  4) cmake/3.16.0-rc4   9) mpi/openmpi/4.0.3/gcc/ib
+  5) gcc/9.2.0         10) perl/5.30.2
+
+ 
+
++ cpus=48
++ echo '---- Inputs ' 2016 2020 /gpfs/home/mep22dku/scratch/ModelRuns/TOM12_TJ_T001 T001 dev
++ YEARP=
++ cd /gpfs/home/mep22dku/scratch/ModelRuns/TOM12_TJ_T001
++ export MYAPP=./opa
++ MYAPP=./opa
++ date
+++ date
++ START='Wed 23 Mar 10:48:27 GMT 2022'
++ mpirun -np 48 ./opa
+slurmstepd: error: *** JOB 10838472 ON i0009 CANCELLED AT 2022-03-23T11:26:34 ***

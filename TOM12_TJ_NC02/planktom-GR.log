@@ -1,0 +1,434 @@
+---- Inputs  2020 2020 /gpfs/home/mep22dku/scratch/ModelRuns/TOM12_TJ_NC02 NC02 dev
+Thu 24 Mar 09:58:16 GMT 2022
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-> report :  Performance report : total time spent for XIOS : 93.3674 s
+-> report :  Performance report : time spent for waiting free buffer : 0.000742455 s
+-> report :  Performance report : Ratio : 0.000795197 %
+-> report :  Performance report : This ratio must be close to zero. Otherwise it may be usefull to increase buffer size or numbers of server
+-> report :  Memory report : Current buffer_size : 50000000
+-> report :  Memory report : Minimum buffer size required : 67138
+-> report :  Memory report : increasing it by a factor will increase performance, depending of the volume of data wrote in file at each time step of the file
+-> report :  Performance report : total time spent for XIOS : 92.2294 s
+-> report :  Performance report : time spent for waiting free buffer : 0.000742798 s
+-> report :  Performance report : Ratio : 0.000805381 %
+-> report :  Performance report : This ratio must be close to zero. Otherwise it may be usefull to increase buffer size or numbers of server
+-> report :  Memory report : Current buffer_size : 50000000
+-> report :  Memory report : Minimum buffer size required : 67138
+-> report :  Memory report : increasing it by a factor will increase performance, depending of the volume of data wrote in file at each time step of the file
+-> report :  Performance report : total time spent for XIOS : 93.4603 s
+-> report :  Performance report : time spent for waiting free buffer : 0.000694537 s
+-> report :  Performance report : Ratio : 0.000743136 %
+-> report :  Performance report : This ratio must be close to zero. Otherwise it may be usefull to increase buffer size or numbers of server
+-> report :  Memory report : Current buffer_size : 50000000
+-> report :  Memory report : Minimum buffer size required : 69370
+-> report :  Memory report : increasing it by a factor will increase performance, depending of the volume of data wrote in file at each time step of the file
+-> report :  Performance report : total time spent for XIOS : 93.2362 s
+-> report :  Performance report : time spent for waiting free buffer : 0.000766154 s
+-> report :  Performance report : Ratio : 0.000821734 %
+-> report :  Performance report : This ratio must be close to zero. Otherwise it may be usefull to increase buffer size or numbers of server
+-> report :  Memory report : Current buffer_size : 50000000
+-> report :  Memory report : Minimum buffer size required : 69370
+-> report :  Memory report : increasing it by a factor will increase performance, depending of the volume of data wrote in file at each time step of the file
+-> report :  Performance report : total time spent for XIOS : 92.8064 s
+-> report :  Performance report : time spent for waiting free buffer : 0.00323049 s
+-> report :  Performance report : Ratio : 0.00348089 %
+-> report :  Performance report : This ratio must be close to zero. Otherwise it may be usefull to increase buffer size or numbers of server
+-> report :  Memory report : Current buffer_size : 50000000
+-> report :  Memory report : Minimum buffer size required : 67138
+-> report :  Memory report : increasing it by a factor will increase performance, depending of the volume of data wrote in file at each time step of the file
+-> report :  Performance report : total time spent for XIOS : 92.5305 s
+-> report :  Performance report : time spent for waiting free buffer : 0.000800339 s
+-> report :  Performance report : Ratio : 0.000864947 %
+-> report :  Performance report : This ratio must be close to zero. Otherwise it may be usefull to increase buffer size or numbers of server
+-> report :  Memory report : Current buffer_size : 50000000
+-> report :  Memory report : Minimum buffer size required : 67138
+-> report :  Memory report : increasing it by a factor will increase performance, depending of the volume of data wrote in file at each time step of the file
+-> report :  Performance report : total time spent for XIOS : 92.2776 s
+-> report :  Performance report : time spent for waiting free buffer : 0.00078861 s
+-> report :  Performance report : Ratio : 0.000854606 %
+-> report :  Performance report : This ratio must be close to zero. Otherwise it may be usefull to increase buffer size or numbers of server
+-> report :  Memory report : Current buffer_size : 50000000
+-> report :  Memory report : Minimum buffer size required : 67138
+-> report :  Memory report : increasing it by a factor will increase performance, depending of the volume of data wrote in file at each time step of the file
+-> report :  Performance report : total time spent for XIOS : 92.7094 s
+-> report :  Performance report : time spent for waiting free buffer : 0.00320299 s
+-> report :  Performance report : Ratio : 0.00345488 %
+-> report :  Performance report : This ratio must be close to zero. Otherwise it may be usefull to increase buffer size or numbers of server
+-> report :  Memory report : Current buffer_size : 50000000
+-> report :  Memory report : Minimum buffer size required : 67138
+-> report :  Memory report : increasing it by a factor will increase performance, depending of the volume of data wrote in file at each time step of the file
+-> report :  Performance report : total time spent for XIOS : 92.1812 s
+-> report :  Performance report : time spent for waiting free buffer : 0.00330242 s
+-> report :  Performance report : Ratio : 0.00358253 %
+-> report :  Performance report : This ratio must be close to zero. Otherwise it may be usefull to increase buffer size or numbers of server
+-> report :  Memory report : Current buffer_size : 50000000
+-> report :  Memory report : Minimum buffer size required : 67138
+-> report :  Memory report : increasing it by a factor will increase performance, depending of the volume of data wrote in file at each time step of the file
+-> report :  Performance report : total time spent for XIOS : 93.5795 s
+-> report :  Performance report : time spent for waiting free buffer : 0.00321749 s
+-> report :  Performance report : Ratio : 0.00343824 %
+-> report :  Performance report : This ratio must be close to zero. Otherwise it may be usefull to increase buffer size or numbers of server
+-> report :  Memory report : Current buffer_size : 50000000
+-> report :  Memory report : Minimum buffer size required : 69370
+-> report :  Memory report : increasing it by a factor will increase performance, depending of the volume of data wrote in file at each time step of the file
+-> report :  Performance report : total time spent for XIOS : 94.3171 s
+-> report :  Performance report : time spent for waiting free buffer : 0.00314991 s
+-> report :  Performance report : Ratio : 0.0033397 %
+-> report :  Performance report : This ratio must be close to zero. Otherwise it may be usefull to increase buffer size or numbers of server
+-> report :  Memory report : Current buffer_size : 50000000
+-> report :  Memory report : Minimum buffer size required : 92434
+-> report :  Memory report : increasing it by a factor will increase performance, depending of the volume of data wrote in file at each time step of the file
+-> report :  Performance report : total time spent for XIOS : 92.3297 s
+-> report :  Performance report : time spent for waiting free buffer : 0.00356103 s
+-> report :  Performance report : Ratio : 0.00385687 %
+-> report :  Performance report : This ratio must be close to zero. Otherwise it may be usefull to increase buffer size or numbers of server
+-> report :  Memory report : Current buffer_size : 50000000
+-> report :  Memory report : Minimum buffer size required : 67138
+-> report :  Memory report : increasing it by a factor will increase performance, depending of the volume of data wrote in file at each time step of the file
+-> report :  Performance report : total time spent for XIOS : 93.8846 s
+-> report :  Performance report : time spent for waiting free buffer : 0.0032137 s
+-> report :  Performance report : Ratio : 0.00342303 %
+-> report :  Performance report : This ratio must be close to zero. Otherwise it may be usefull to increase buffer size or numbers of server
+-> report :  Memory report : Current buffer_size : 50000000
+-> report :  Memory report : Minimum buffer size required : 89458
+-> report :  Memory report : increasing it by a factor will increase performance, depending of the volume of data wrote in file at each time step of the file
+-> report :  Performance report : total time spent for XIOS : 93.8273 s
+-> report :  Performance report : time spent for waiting free buffer : 0.000757744 s
+-> report :  Performance report : Ratio : 0.000807595 %
+-> report :  Performance report : This ratio must be close to zero. Otherwise it may be usefull to increase buffer size or numbers of server
+-> report :  Memory report : Current buffer_size : 50000000
+-> report :  Memory report : Minimum buffer size required : 67138
+-> report :  Memory report : increasing it by a factor will increase performance, depending of the volume of data wrote in file at each time step of the file
+-> report :  Performance report : total time spent for XIOS : 92.7673 s
+-> report :  Performance report : time spent for waiting free buffer : 0.000730728 s
+-> report :  Performance report : Ratio : 0.0007877 %
+-> report :  Performance report : This ratio must be close to zero. Otherwise it may be usefull to increase buffer size or numbers of server
+-> report :  Memory report : Current buffer_size : 50000000
+-> report :  Memory report : Minimum buffer size required : 67138
+-> report :  Memory report : increasing it by a factor will increase performance, depending of the volume of data wrote in file at each time step of the file
+-> report :  Performance report : total time spent for XIOS : 93.7474 s
+-> report :  Performance report : time spent for waiting free buffer : 0.00328787 s
+-> report :  Performance report : Ratio : 0.00350716 %
+-> report :  Performance report : This ratio must be close to zero. Otherwise it may be usefull to increase buffer size or numbers of server
+-> report :  Memory report : Current buffer_size : 50000000
+-> report :  Memory report : Minimum buffer size required : 89458
+-> report :  Memory report : increasing it by a factor will increase performance, depending of the volume of data wrote in file at each time step of the file
+-> report :  Performance report : total time spent for XIOS : 92.899 s
+-> report :  Performance report : time spent for waiting free buffer : 0.00317796 s
+-> report :  Performance report : Ratio : 0.00342087 %
+-> report :  Performance report : This ratio must be close to zero. Otherwise it may be usefull to increase buffer size or numbers of server
+-> report :  Memory report : Current buffer_size : 50000000
+-> report :  Memory report : Minimum buffer size required : 67138
+-> report :  Memory report : increasing it by a factor will increase performance, depending of the volume of data wrote in file at each time step of the file
+-> report :  Performance report : total time spent for XIOS : 92.8932 s
+-> report :  Performance report : time spent for waiting free buffer : 0.00324497 s
+-> report :  Performance report : Ratio : 0.00349323 %
+-> report :  Performance report : This ratio must be close to zero. Otherwise it may be usefull to increase buffer size or numbers of server
+-> report :  Memory report : Current buffer_size : 50000000
+-> report :  Memory report : Minimum buffer size required : 67138
+-> report :  Memory report : increasing it by a factor will increase performance, depending of the volume of data wrote in file at each time step of the file
+-> report :  Performance report : total time spent for XIOS : 92.6044 s
+-> report :  Performance report : time spent for waiting free buffer : 0.000821277 s
+-> report :  Performance report : Ratio : 0.000886866 %
+-> report :  Performance report : This ratio must be close to zero. Otherwise it may be usefull to increase buffer size or numbers of server
+-> report :  Memory report : Current buffer_size : 50000000
+-> report :  Memory report : Minimum buffer size required : 67138
+-> report :  Memory report : increasing it by a factor will increase performance, depending of the volume of data wrote in file at each time step of the file
+-> report :  Performance report : total time spent for XIOS : 93.7587 s
+-> report :  Performance report : time spent for waiting free buffer : 0.00073741 s
+-> report :  Performance report : Ratio : 0.000786497 %
+-> report :  Performance report : This ratio must be close to zero. Otherwise it may be usefull to increase buffer size or numbers of server
+-> report :  Memory report : Current buffer_size : 50000000
+-> report :  Memory report : Minimum buffer size required : 69370
+-> report :  Memory report : increasing it by a factor will increase performance, depending of the volume of data wrote in file at each time step of the file
+-> report :  Performance report : total time spent for XIOS : 93.2798 s
+-> report :  Performance report : time spent for waiting free buffer : 0.00311551 s
+-> report :  Performance report : Ratio : 0.00333997 %
+-> report :  Performance report : This ratio must be close to zero. Otherwise it may be usefull to increase buffer size or numbers of server
+-> report :  Memory report : Current buffer_size : 50000000
+-> report :  Memory report : Minimum buffer size required : 67138
+-> report :  Memory report : increasing it by a factor will increase performance, depending of the volume of data wrote in file at each time step of the file
+-> report :  Performance report : total time spent for XIOS : 92.2339 s
+-> report :  Performance report : time spent for waiting free buffer : 0.00313 s
+-> report :  Performance report : Ratio : 0.00339355 %
+-> report :  Performance report : This ratio must be close to zero. Otherwise it may be usefull to increase buffer size or numbers of server
+-> report :  Memory report : Current buffer_size : 50000000
+-> report :  Memory report : Minimum buffer size required : 67138
+-> report :  Memory report : increasing it by a factor will increase performance, depending of the volume of data wrote in file at each time step of the file
+-> report :  Performance report : total time spent for XIOS : 93.0984 s
+-> report :  Performance report : time spent for waiting free buffer : 0.00319201 s
+-> report :  Performance report : Ratio : 0.00342864 %
+-> report :  Performance report : This ratio must be close to zero. Otherwise it may be usefull to increase buffer size or numbers of server
+-> report :  Memory report : Current buffer_size : 50000000
+-> report :  Memory report : Minimum buffer size required : 67138
+-> report :  Memory report : increasing it by a factor will increase performance, depending of the volume of data wrote in file at each time step of the file
+-> report :  Performance report : total time spent for XIOS : 92.2059 s
+-> report :  Performance report : time spent for waiting free buffer : 0.00077042 s
+-> report :  Performance report : Ratio : 0.000835543 %
+-> report :  Performance report : This ratio must be close to zero. Otherwise it may be usefull to increase buffer size or numbers of server
+-> report :  Memory report : Current buffer_size : 50000000
+-> report :  Memory report : Minimum buffer size required : 67138
+-> report :  Memory report : increasing it by a factor will increase performance, depending of the volume of data wrote in file at each time step of the file
+-> report :  Performance report : total time spent for XIOS : 92.5197 s
+-> report :  Performance report : time spent for waiting free buffer : 0.00322927 s
+-> report :  Performance report : Ratio : 0.00349036 %
+-> report :  Performance report : This ratio must be close to zero. Otherwise it may be usefull to increase buffer size or numbers of server
+-> report :  Memory report : Current buffer_size : 50000000
+-> report :  Memory report : Minimum buffer size required : 67138
+-> report :  Memory report : increasing it by a factor will increase performance, depending of the volume of data wrote in file at each time step of the file
+-> report :  Performance report : total time spent for XIOS : 92.8457 s
+-> report :  Performance report : time spent for waiting free buffer : 0.00302063 s
+-> report :  Performance report : Ratio : 0.00325339 %
+-> report :  Performance report : This ratio must be close to zero. Otherwise it may be usefull to increase buffer size or numbers of server
+-> report :  Memory report : Current buffer_size : 50000000
+-> report :  Memory report : Minimum buffer size required : 69370
+-> report :  Memory report : increasing it by a factor will increase performance, depending of the volume of data wrote in file at each time step of the file
+-> report :  Performance report : total time spent for XIOS : 93.639 s
+-> report :  Performance report : time spent for waiting free buffer : 0.00335778 s
+-> report :  Performance report : Ratio : 0.00358588 %
+-> report :  Performance report : This ratio must be close to zero. Otherwise it may be usefull to increase buffer size or numbers of server
+-> report :  Memory report : Current buffer_size : 50000000
+-> report :  Memory report : Minimum buffer size required : 89458
+-> report :  Memory report : increasing it by a factor will increase performance, depending of the volume of data wrote in file at each time step of the file
+-> report :  Performance report : total time spent for XIOS : 94.4139 s
+-> report :  Performance report : time spent for waiting free buffer : 0.00337775 s
+-> report :  Performance report : Ratio : 0.0035776 %
+-> report :  Performance report : This ratio must be close to zero. Otherwise it may be usefull to increase buffer size or numbers of server
+-> report :  Memory report : Current buffer_size : 50000000
+-> report :  Memory report : Minimum buffer size required : 92434
+-> report :  Memory report : increasing it by a factor will increase performance, depending of the volume of data wrote in file at each time step of the file
+-> report :  Performance report : total time spent for XIOS : 94.2223 s
+-> report :  Performance report : time spent for waiting free buffer : 0.00327683 s
+-> report :  Performance report : Ratio : 0.00347777 %
+-> report :  Performance report : This ratio must be close to zero. Otherwise it may be usefull to increase buffer size or numbers of server
+-> report :  Memory report : Current buffer_size : 50000000
+-> report :  Memory report : Minimum buffer size required : 89458
+-> report :  Memory report : increasing it by a factor will increase performance, depending of the volume of data wrote in file at each time step of the file
+-> report :  Performance report : total time spent for XIOS : 91.3576 s
+-> report :  Performance report : time spent for waiting free buffer : 0.000770785 s
+-> report :  Performance report : Ratio : 0.000843701 %
+-> report :  Performance report : This ratio must be close to zero. Otherwise it may be usefull to increase buffer size or numbers of server
+-> report :  Memory report : Current buffer_size : 50000000
+-> report :  Memory report : Minimum buffer size required : 67138
+-> report :  Memory report : increasing it by a factor will increase performance, depending of the volume of data wrote in file at each time step of the file
+-> report :  Performance report : total time spent for XIOS : 92.8654 s
+-> report :  Performance report : time spent for waiting free buffer : 0.0007153 s
+-> report :  Performance report : Ratio : 0.000770255 %
+-> report :  Performance report : This ratio must be close to zero. Otherwise it may be usefull to increase buffer size or numbers of server
+-> report :  Memory report : Current buffer_size : 50000000
+-> report :  Memory report : Minimum buffer size required : 69370
+-> report :  Memory report : increasing it by a factor will increase performance, depending of the volume of data wrote in file at each time step of the file
+-> report :  Performance report : total time spent for XIOS : 93.3887 s
+-> report :  Performance report : time spent for waiting free buffer : 0.00307474 s
+-> report :  Performance report : Ratio : 0.00329242 %
+-> report :  Performance report : This ratio must be close to zero. Otherwise it may be usefull to increase buffer size or numbers of server
+-> report :  Memory report : Current buffer_size : 50000000
+-> report :  Memory report : Minimum buffer size required : 69370
+-> report :  Memory report : increasing it by a factor will increase performance, depending of the volume of data wrote in file at each time step of the file
+-> report :  Performance report : total time spent for XIOS : 91.442 s
+-> report :  Performance report : time spent for waiting free buffer : 0.000778899 s
+-> report :  Performance report : Ratio : 0.000851795 %
+-> report :  Performance report : This ratio must be close to zero. Otherwise it may be usefull to increase buffer size or numbers of server
+-> report :  Memory report : Current buffer_size : 50000000
+-> report :  Memory report : Minimum buffer size required : 67138
+-> report :  Memory report : increasing it by a factor will increase performance, depending of the volume of data wrote in file at each time step of the file
+-> report :  Performance report : total time spent for XIOS : 92.5773 s
+-> report :  Performance report : time spent for waiting free buffer : 0.00315719 s
+-> report :  Performance report : Ratio : 0.00341032 %
+-> report :  Performance report : This ratio must be close to zero. Otherwise it may be usefull to increase buffer size or numbers of server
+-> report :  Memory report : Current buffer_size : 50000000
+-> report :  Memory report : Minimum buffer size required : 67138
+-> report :  Memory report : increasing it by a factor will increase performance, depending of the volume of data wrote in file at each time step of the file
+-> report :  Performance report : total time spent for XIOS : 93.0991 s
+-> report :  Performance report : time spent for waiting free buffer : 0.00298046 s
+-> report :  Performance report : Ratio : 0.00320138 %
+-> report :  Performance report : This ratio must be close to zero. Otherwise it may be usefull to increase buffer size or numbers of server
+-> report :  Memory report : Current buffer_size : 50000000
+-> report :  Memory report : Minimum buffer size required : 69370
+-> report :  Memory report : increasing it by a factor will increase performance, depending of the volume of data wrote in file at each time step of the file
+-> report :  Performance report : total time spent for XIOS : 92.7597 s
+-> report :  Performance report : time spent for waiting free buffer : 0.000776144 s
+-> report :  Performance report : Ratio : 0.000836726 %
+-> report :  Performance report : This ratio must be close to zero. Otherwise it may be usefull to increase buffer size or numbers of server
+-> report :  Memory report : Current buffer_size : 50000000
+-> report :  Memory report : Minimum buffer size required : 67138
+-> report :  Memory report : increasing it by a factor will increase performance, depending of the volume of data wrote in file at each time step of the file
+-> report :  Performance report : total time spent for XIOS : 92.8949 s
+-> report :  Performance report : time spent for waiting free buffer : 0.00324347 s
+-> report :  Performance report : Ratio : 0.00349155 %
+-> report :  Performance report : This ratio must be close to zero. Otherwise it may be usefull to increase buffer size or numbers of server
+-> report :  Memory report : Current buffer_size : 50000000
+-> report :  Memory report : Minimum buffer size required : 67138
+-> report :  Memory report : increasing it by a factor will increase performance, depending of the volume of data wrote in file at each time step of the file
+-> report :  Performance report : total time spent for XIOS : 91.4058 s
+-> report :  Performance report : time spent for waiting free buffer : 0.000789627 s
+-> report :  Performance report : Ratio : 0.00086387 %
+-> report :  Performance report : This ratio must be close to zero. Otherwise it may be usefull to increase buffer size or numbers of server
+-> report :  Memory report : Current buffer_size : 50000000
+-> report :  Memory report : Minimum buffer size required : 67138
+-> report :  Memory report : increasing it by a factor will increase performance, depending of the volume of data wrote in file at each time step of the file
+-> report :  Performance report : total time spent for XIOS : 92.0854 s
+-> report :  Performance report : time spent for waiting free buffer : 0.000726203 s
+-> report :  Performance report : Ratio : 0.000788619 %
+-> report :  Performance report : This ratio must be close to zero. Otherwise it may be usefull to increase buffer size or numbers of server
+-> report :  Memory report : Current buffer_size : 50000000
+-> report :  Memory report : Minimum buffer size required : 69370
+-> report :  Memory report : increasing it by a factor will increase performance, depending of the volume of data wrote in file at each time step of the file
+-> report :  Performance report : total time spent for XIOS : 93.9615 s
+-> report :  Performance report : time spent for waiting free buffer : 0.000709474 s
+-> report :  Performance report : Ratio : 0.000755069 %
+-> report :  Performance report : This ratio must be close to zero. Otherwise it may be usefull to increase buffer size or numbers of server
+-> report :  Memory report : Current buffer_size : 50000000
+-> report :  Memory report : Minimum buffer size required : 69370
+-> report :  Memory report : increasing it by a factor will increase performance, depending of the volume of data wrote in file at each time step of the file
+-> report :  Performance report : total time spent for XIOS : 92.6888 s
+-> report :  Performance report : time spent for waiting free buffer : 0.00303815 s
+-> report :  Performance report : Ratio : 0.0032778 %
+-> report :  Performance report : This ratio must be close to zero. Otherwise it may be usefull to increase buffer size or numbers of server
+-> report :  Memory report : Current buffer_size : 50000000
+-> report :  Memory report : Minimum buffer size required : 69370
+-> report :  Memory report : increasing it by a factor will increase performance, depending of the volume of data wrote in file at each time step of the file
+-> report :  Performance report : total time spent for XIOS : 92.0263 s
+-> report :  Performance report : time spent for waiting free buffer : 0.000789174 s
+-> report :  Performance report : Ratio : 0.000857553 %
+-> report :  Performance report : This ratio must be close to zero. Otherwise it may be usefull to increase buffer size or numbers of server
+-> report :  Memory report : Current buffer_size : 50000000
+-> report :  Memory report : Minimum buffer size required : 69370
+-> report :  Memory report : increasing it by a factor will increase performance, depending of the volume of data wrote in file at each time step of the file
+-> report :  Performance report : total time spent for XIOS : 92.869 s
+-> report :  Performance report : time spent for waiting free buffer : 0.00306766 s
+-> report :  Performance report : Ratio : 0.00330321 %
+-> report :  Performance report : This ratio must be close to zero. Otherwise it may be usefull to increase buffer size or numbers of server
+-> report :  Memory report : Current buffer_size : 50000000
+-> report :  Memory report : Minimum buffer size required : 69370
+-> report :  Memory report : increasing it by a factor will increase performance, depending of the volume of data wrote in file at each time step of the file
+-> report :  Performance report : total time spent for XIOS : 91.6371 s
+-> report :  Performance report : time spent for waiting free buffer : 0.00076078 s
+-> report :  Performance report : Ratio : 0.00083021 %
+-> report :  Performance report : This ratio must be close to zero. Otherwise it may be usefull to increase buffer size or numbers of server
+-> report :  Memory report : Current buffer_size : 50000000
+-> report :  Memory report : Minimum buffer size required : 67138
+-> report :  Memory report : increasing it by a factor will increase performance, depending of the volume of data wrote in file at each time step of the file
+-> report :  Performance report : total time spent for XIOS : 92.671 s
+-> report :  Performance report : time spent for waiting free buffer : 0.000794941 s
+-> report :  Performance report : Ratio : 0.00085781 %
+-> report :  Performance report : This ratio must be close to zero. Otherwise it may be usefull to increase buffer size or numbers of server
+-> report :  Memory report : Current buffer_size : 50000000
+-> report :  Memory report : Minimum buffer size required : 69370
+-> report :  Memory report : increasing it by a factor will increase performance, depending of the volume of data wrote in file at each time step of the file
+-> report :  Performance report : total time spent for XIOS : 92.8301 s
+-> report :  Performance report : time spent for waiting free buffer : 0.000715879 s
+-> report :  Performance report : Ratio : 0.000771171 %
+-> report :  Performance report : This ratio must be close to zero. Otherwise it may be usefull to increase buffer size or numbers of server
+-> report :  Memory report : Current buffer_size : 50000000
+-> report :  Memory report : Minimum buffer size required : 67138
+-> report :  Memory report : increasing it by a factor will increase performance, depending of the volume of data wrote in file at each time step of the file
+-> report :  Performance report : total time spent for XIOS : 91.179 s
+-> report :  Performance report : time spent for waiting free buffer : 0.000778073 s
+-> report :  Performance report : Ratio : 0.000853347 %
+-> report :  Performance report : This ratio must be close to zero. Otherwise it may be usefull to increase buffer size or numbers of server
+-> report :  Memory report : Current buffer_size : 50000000
+-> report :  Memory report : Minimum buffer size required : 67138
+-> report :  Memory report : increasing it by a factor will increase performance, depending of the volume of data wrote in file at each time step of the file
+-> report :  Performance report : total time spent for XIOS : 92.5096 s
+-> report :  Performance report : time spent for waiting free buffer : 0.000767914 s
+-> report :  Performance report : Ratio : 0.000830091 %
+-> report :  Performance report : This ratio must be close to zero. Otherwise it may be usefull to increase buffer size or numbers of server
+-> report :  Memory report : Current buffer_size : 50000000
+-> report :  Memory report : Minimum buffer size required : 67138
+-> report :  Memory report : increasing it by a factor will increase performance, depending of the volume of data wrote in file at each time step of the file
+Thu 24 Mar 10:38:39 GMT 2022
+Submitted batch job 10844740
