@@ -1,0 +1,128 @@
+06-15 11:38 Run          INFO     Processing for parameters: breakdown_parms
+06-15 11:38 Run          INFO     Processing for years: 2029 to 2029
+06-15 11:38 Run          INFO     SOCAT available from 1970-01-01 00:00:00
+06-15 11:38 Run          INFO     GLODAP_talk available from 1900-01-01 00:00:00
+06-15 11:38 Run          INFO     GLODAP_tco2 available from 1900-01-01 00:00:00
+06-15 11:38 Run          INFO     GLODAP_fco2 available from 1900-01-01 00:00:00
+06-15 11:38 Run          INFO     occci available from 1970-01-01 00:00:00
+06-15 11:38 Run          INFO     cfc available from 1981-01-01 00:00:00
+06-15 11:38 Run          INFO     WOA_T_1981_2010 available from 1900-01-01 00:00:00
+06-15 11:38 Run          INFO     WOA_T_2005_2017 available from 1900-01-01 00:00:00
+06-15 11:38 Run          INFO     WOA_T_1975_1984 available from 1900-01-01 00:00:00
+06-15 11:38 Run          INFO     WOA_T_1965_1974 available from 1900-01-01 00:00:00
+06-15 11:38 Run          INFO     WOA_T_1955_1964 available from 1900-01-01 00:00:00
+06-15 11:38 Run          INFO     WOA_S available from 1900-01-01 00:00:00
+06-15 11:38 Run          INFO     WOA_MLD available from 1900-01-01 00:00:00
+06-15 11:38 Run          INFO     UNITS:
+06-15 11:38 Run          INFO     PgCarbonPerYr 3.7843200000000004e-07
+06-15 11:38 Run          INFO     TgCarbonPerYr 0.000378432
+06-15 11:38 Run          INFO     TmolPerYr 3.1536e-05
+06-15 11:38 Run          INFO     TgPerYr 3.1536e-05
+06-15 11:38 Run          INFO     PgPerYr 3.1536000000000005e-08
+06-15 11:38 Run          INFO     PerYr 1
+06-15 11:38 Run          INFO     1/giga 999999999.9999999
+06-15 11:38 Run          INFO     PgCarbon 1.2000000000000001e-14
+06-15 11:38 Run          INFO     Conc->PgCarbon 1.2e-11
+06-15 11:38 Run          INFO     Surface: Cflx PgCarbonPerYr
+06-15 11:38 Run          INFO     Surface: Cflx PgCarbonPerYr
+06-15 11:38 Run          INFO     Surface: Cflx PgCarbonPerYr
+06-15 11:38 Run          INFO     Surface: Cflx PgCarbonPerYr
+06-15 11:38 Run          INFO     Surface: Cflx PgCarbonPerYr
+06-15 11:38 Run          INFO     Surface: Cflx PgCarbonPerYr
+06-15 11:38 Run          INFO     Surface: Cflx PgCarbonPerYr
+06-15 11:38 Run          INFO     Surface: Cflx PgCarbonPerYr
+06-15 11:38 Run          INFO     Surface: Cflx PgCarbonPerYr
+06-15 11:38 Run          INFO     Surface: Cflx PgCarbonPerYr
+06-15 11:38 Run          INFO     Avg: Fer 1/giga
+06-15 11:38 Run          INFO     Avg: Fer 1/giga
+06-15 11:38 Run          INFO     Avg: Fer 1/giga
+06-15 11:38 Run          INFO     Avg: Fer 1/giga
+06-15 11:38 Run          INFO     Avg: Fer 1/giga
+06-15 11:38 Run          INFO     Avg: Fer 1/giga
+06-15 11:38 Run          INFO     Avg: Fer 1/giga
+06-15 11:38 Run          INFO     Avg: Fer 1/giga
+06-15 11:38 Run          INFO     Avg: Fer 1/giga
+06-15 11:38 Run          INFO     Avg: Fer 1/giga
+06-15 11:38 Run          INFO     Volume: PPT PgCarbonPerYr
+06-15 11:38 Run          INFO     Volume: PPT PgCarbonPerYr
+06-15 11:38 Run          INFO     Volume: PPT PgCarbonPerYr
+06-15 11:38 Run          INFO     Volume: PPT PgCarbonPerYr
+06-15 11:38 Run          INFO     Volume: PPT PgCarbonPerYr
+06-15 11:38 Run          INFO     Volume: PPT PgCarbonPerYr
+06-15 11:38 Run          INFO     Volume: PPT PgCarbonPerYr
+06-15 11:38 Run          INFO     Volume: PPT PgCarbonPerYr
+06-15 11:38 Run          INFO     Volume: PPT PgCarbonPerYr
+06-15 11:38 Run          INFO     Volume: PPT PgCarbonPerYr
+06-15 11:38 Run          INFO     Avg: TChl 1/giga
+06-15 11:38 Run          INFO     Avg: TChl 1/giga
+06-15 11:38 Run          INFO     Avg: TChl 1/giga
+06-15 11:38 Run          INFO     Avg: TChl 1/giga
+06-15 11:38 Run          INFO     Avg: TChl 1/giga
+06-15 11:38 Run          INFO     Avg: TChl 1/giga
+06-15 11:38 Run          INFO     Avg: TChl 1/giga
+06-15 11:38 Run          INFO     Avg: TChl 1/giga
+06-15 11:38 Run          INFO     Avg: TChl 1/giga
+06-15 11:38 Run          INFO     Avg: TChl 1/giga
+06-15 11:38 Run          INFO     Level: EXP PgCarbonPerYr
+06-15 11:38 Run          INFO     Level: EXP PgCarbonPerYr
+06-15 11:38 Run          INFO     Level: EXP PgCarbonPerYr
+06-15 11:38 Run          INFO     Level: EXP gCarbonPerYr
+06-15 11:38 Run          INFO     Level: EXP PgCarbonPerYr
+06-15 11:38 Run          INFO     Level: EXP PgCarbonPerYr
+06-15 11:38 Run          INFO     Level: EXP PgCarbonPerYr
+06-15 11:38 Run          INFO     Level: EXP PgCarbonPerYr
+06-15 11:38 Run          INFO     Level: EXP PgCarbonPerYr
+06-15 11:38 Run          INFO     Level: EXP PgCarbonPerYr
+06-15 11:38 Run          INFO     Data read from: /gpfs/data/greenocean/software/resources/breakdown/clq_basin_masks_ORCA.nc
+06-15 11:38 Run          INFO     Run data for year 2029: ORCA2_1m_20290101_20291231_grid_T.nc ORCA2_1m_20290101_20291231_ptrc_T.nc ORCA2_1m_20290101_20291231_diad_T.nc  
+06-15 11:38 Run          INFO     Cflx found in ORCA2_1m_20290101_20291231_diad_T.nc
+06-15 11:38 Run          INFO     Cflx found in ORCA2_1m_20290101_20291231_diad_T.nc
+06-15 11:38 Run          INFO     Cflx found in ORCA2_1m_20290101_20291231_diad_T.nc
+06-15 11:38 Run          INFO     Cflx found in ORCA2_1m_20290101_20291231_diad_T.nc
+06-15 11:38 Run          INFO     Cflx found in ORCA2_1m_20290101_20291231_diad_T.nc
+06-15 11:38 Run          INFO     Cflx found in ORCA2_1m_20290101_20291231_diad_T.nc
+06-15 11:38 Run          INFO     Cflx found in ORCA2_1m_20290101_20291231_diad_T.nc
+06-15 11:38 Run          INFO     Cflx found in ORCA2_1m_20290101_20291231_diad_T.nc
+06-15 11:38 Run          INFO     Cflx found in ORCA2_1m_20290101_20291231_diad_T.nc
+06-15 11:38 Run          INFO     Cflx found in ORCA2_1m_20290101_20291231_diad_T.nc
+06-15 11:38 Run          INFO     EXP found in ORCA2_1m_20290101_20291231_diad_T.nc
+06-15 11:38 Run          INFO     EXP found in ORCA2_1m_20290101_20291231_diad_T.nc
+06-15 11:38 Run          INFO     EXP found in ORCA2_1m_20290101_20291231_diad_T.nc
+06-15 11:38 Run          INFO     EXP found in ORCA2_1m_20290101_20291231_diad_T.nc
+06-15 11:38 Run          INFO     Unit: gCarbonPerYr not found, using raw data
+06-15 11:38 Run          INFO     EXP found in ORCA2_1m_20290101_20291231_diad_T.nc
+06-15 11:38 Run          INFO     EXP found in ORCA2_1m_20290101_20291231_diad_T.nc
+06-15 11:38 Run          INFO     EXP found in ORCA2_1m_20290101_20291231_diad_T.nc
+06-15 11:38 Run          INFO     EXP found in ORCA2_1m_20290101_20291231_diad_T.nc
+06-15 11:38 Run          INFO     EXP found in ORCA2_1m_20290101_20291231_diad_T.nc
+06-15 11:38 Run          INFO     EXP found in ORCA2_1m_20290101_20291231_diad_T.nc
+06-15 11:38 Run          INFO     PPT found in ORCA2_1m_20290101_20291231_diad_T.nc
+06-15 11:38 Run          INFO     PPT found in ORCA2_1m_20290101_20291231_diad_T.nc
+06-15 11:38 Run          INFO     PPT found in ORCA2_1m_20290101_20291231_diad_T.nc
+06-15 11:38 Run          INFO     PPT found in ORCA2_1m_20290101_20291231_diad_T.nc
+06-15 11:38 Run          INFO     PPT found in ORCA2_1m_20290101_20291231_diad_T.nc
+06-15 11:38 Run          INFO     PPT found in ORCA2_1m_20290101_20291231_diad_T.nc
+06-15 11:38 Run          INFO     PPT found in ORCA2_1m_20290101_20291231_diad_T.nc
+06-15 11:38 Run          INFO     PPT found in ORCA2_1m_20290101_20291231_diad_T.nc
+06-15 11:38 Run          INFO     PPT found in ORCA2_1m_20290101_20291231_diad_T.nc
+06-15 11:38 Run          INFO     PPT found in ORCA2_1m_20290101_20291231_diad_T.nc
+06-15 11:38 Run          INFO     Fer found in ORCA2_1m_20290101_20291231_ptrc_T.nc
+06-15 11:38 Run          INFO     Fer found in ORCA2_1m_20290101_20291231_ptrc_T.nc
+06-15 11:38 Run          INFO     Fer found in ORCA2_1m_20290101_20291231_ptrc_T.nc
+06-15 11:38 Run          INFO     Fer found in ORCA2_1m_20290101_20291231_ptrc_T.nc
+06-15 11:38 Run          INFO     Fer found in ORCA2_1m_20290101_20291231_ptrc_T.nc
+06-15 11:38 Run          INFO     Fer found in ORCA2_1m_20290101_20291231_ptrc_T.nc
+06-15 11:38 Run          INFO     Fer found in ORCA2_1m_20290101_20291231_ptrc_T.nc
+06-15 11:38 Run          INFO     Fer found in ORCA2_1m_20290101_20291231_ptrc_T.nc
+06-15 11:38 Run          INFO     Fer found in ORCA2_1m_20290101_20291231_ptrc_T.nc
+06-15 11:38 Run          INFO     Fer found in ORCA2_1m_20290101_20291231_ptrc_T.nc
+06-15 11:38 Run          INFO     TChl found in ORCA2_1m_20290101_20291231_diad_T.nc
+06-15 11:38 Run          INFO     TChl found in ORCA2_1m_20290101_20291231_diad_T.nc
+06-15 11:38 Run          INFO     TChl found in ORCA2_1m_20290101_20291231_diad_T.nc
+06-15 11:38 Run          INFO     TChl found in ORCA2_1m_20290101_20291231_diad_T.nc
+06-15 11:38 Run          INFO     TChl found in ORCA2_1m_20290101_20291231_diad_T.nc
+06-15 11:38 Run          INFO     TChl found in ORCA2_1m_20290101_20291231_diad_T.nc
+06-15 11:38 Run          INFO     TChl found in ORCA2_1m_20290101_20291231_diad_T.nc
+06-15 11:38 Run          INFO     TChl found in ORCA2_1m_20290101_20291231_diad_T.nc
+06-15 11:38 Run          INFO     TChl found in ORCA2_1m_20290101_20291231_diad_T.nc
+06-15 11:38 Run          INFO     TChl found in ORCA2_1m_20290101_20291231_diad_T.nc

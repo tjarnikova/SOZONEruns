@@ -1,0 +1,36 @@
+#!/bin/sh
+#SBATCH -p compute-16-64
+#SBATCH -t 36:00:00 
+#SBATCH --job-name=tidyup
+#SBATCH -o tidy.log
+#SBATCH -e tidy.log  
+#SBATCH --mem 4G
+
+
+echo "Tidying up: " $modelDir $yearToTidy $Model
+
+module add gcc netcdf/4.7.4/parallel/gcc-openmpi hdf5/1.10.6/gcc-openmpi java mpi/openmpi/4.0.3/gcc/ib perl ferret
+
+module add python/anaconda/2019.10/3.7
+
+# same as conda activate but for a batch
+# source activate netcdf_env  
+# conda install netcdf4
+# conda init bash
+
+# go to model directory
+cd $modelDir
+
+# run script
+./tidyup.sh $yearToTidy $yearToTidy $Model
+
+# same as conda deactivate but for a batch
+# conda deactivate
+
+# # parameters for tidying up
+# yearFrom=$1
+# yearTo=$2
+# # Options for this are TOM5
+# version=$3
+
+

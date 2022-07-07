@@ -1,0 +1,55 @@
+
+ Net freshwater budget 
+   fwf    =          NaN m3 =       NaN Sv
+
+   zarea = 3.57005E+14
+   zvol  =         NaN
+
+ Mean sea level : 
+   at nit000 =          NaN m3 
+   at nitend =          NaN m3 
+   diff      =          NaN m3 =       NaN Sv
+   mean sea level elevation    =       NaN m
+
+ Anomaly of salinity content : 
+   at nit000 =          NaN psu.m3 
+   at nitend =          NaN psu.m3 
+   diff      =          NaN psu.m3
+
+ Mean salinity : 
+   at nit000 =       NaN psu 
+   at nitend =       NaN psu 
+   diff      =       NaN psu
+   S-SLevitus=       NaN psu
+
+ Gibraltar : 
+   Flux entrant (Sv) :   0.0000
+   Flux sortant (Sv) :      NaN
+   T entrant (deg)   :   0.0000
+   T sortant (deg)   :      NaN
+   S entrant (psu)   :   0.0000
+   S sortant (psu)   :      NaN
+
+ Cadiz : 
+   Flux entrant (Sv) :   0.0000
+   Flux sortant (Sv) :      NaN
+   T entrant (deg)   :   0.0000
+   T sortant (deg)   :      NaN
+   S entrant (psu)   :   0.0000
+   S sortant (psu)   :      NaN
+
+ Bab el Mandeb : 
+   Flux entrant (Sv) :   0.0000
+   Flux sortant (Sv) :      NaN
+   T entrant (deg)   :   0.0000
+   T sortant (deg)   :      NaN
+   S entrant (psu)   :   0.0000
+   S sortant (psu)   :      NaN
+
+ Baltic : 
+   Flux entrant (Sv) :   0.0000
+   Flux sortant (Sv) :      NaN
+   T entrant (deg)   :   0.0000
+   T sortant (deg)   :      NaN
+   S entrant (psu)   :   0.0000
+   S sortant (psu)   :      NaN

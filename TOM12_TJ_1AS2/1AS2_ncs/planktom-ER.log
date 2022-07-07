@@ -1,0 +1,31 @@
+
+Currently Loaded Modules:
+  1) gmp/6.1.2          6) netcdf/4.7.4/parallel/gcc-openmpi
+  2) mpfr/4.0.2         7) hdf5/1.10.6/gcc-openmpi
+  3) mpc/1.1.0          8) java/jdk1.8.0_231
+  4) cmake/3.16.0-rc4   9) mpi/openmpi/4.0.3/gcc/ib
+  5) gcc/9.2.0         10) perl/5.30.2
+
+ 
+
++ cpus=48
++ echo '---- Inputs ' 2063 2100 /gpfs/home/mep22dku/scratch/ModelRuns/TOM12_TJ_1AS2 1AS2 dev
++ YEARP=
++ cd /gpfs/home/mep22dku/scratch/ModelRuns/TOM12_TJ_1AS2
++ export MYAPP=./opa
++ MYAPP=./opa
++ date
+++ date
++ START='Wed 22 Jun 21:07:58 BST 2022'
++ mpirun -np 48 ./opa
++ date
+++ date
++ FINISH='Wed 22 Jun 21:08:01 BST 2022'
++ yearPrevious=2063
++ yearToRun=2064
+++ awk '{printf "%.8d\n", $0}' time.step
+awk: fatal: cannot open file `time.step' for reading (No such file or directory)
++ timestep=
++ mv time.step old.time.step
+mv: cannot stat ‘time.step’: No such file or directory
++ '[' -f ORCA2__restart_0000.nc ']'

@@ -1,0 +1,176 @@
+Tidying up:  /gpfs/home/mep22dku/scratch/ModelRuns/TOM12_TJ_1AS2 2062 dev
+
+The following have been reloaded with a version change:
+  1) gcc/9.2.0 => gcc/11.1.0
+
+1750
+1948
+10
+10
+5
+1
+1
+1
+1
+1
+
+Tidying up year: 2062 to 2062 for TOM12_TJ_1AS2
+Coping data centrally
+INFO  Processing for parameters: breakdown_parms
+INFO  Processing for years: 2062 to 2062
+INFO  SOCAT available from 1970-01-01 00:00:00
+INFO  GLODAP_talk available from 1900-01-01 00:00:00
+INFO  GLODAP_tco2 available from 1900-01-01 00:00:00
+INFO  GLODAP_fco2 available from 1900-01-01 00:00:00
+INFO  occci available from 1970-01-01 00:00:00
+INFO  cfc available from 1981-01-01 00:00:00
+INFO  WOA_T_1981_2010 available from 1900-01-01 00:00:00
+INFO  WOA_T_2005_2017 available from 1900-01-01 00:00:00
+INFO  WOA_T_1975_1984 available from 1900-01-01 00:00:00
+INFO  WOA_T_1965_1974 available from 1900-01-01 00:00:00
+INFO  WOA_T_1955_1964 available from 1900-01-01 00:00:00
+INFO  WOA_S available from 1900-01-01 00:00:00
+INFO  WOA_MLD available from 1900-01-01 00:00:00
+INFO  UNITS:
+INFO  PgCarbonPerYr 3.7843200000000004e-07
+INFO  TgCarbonPerYr 0.000378432
+INFO  TmolPerYr 3.1536e-05
+INFO  TgPerYr 3.1536e-05
+INFO  PgPerYr 3.1536000000000005e-08
+INFO  PerYr 1
+INFO  1/giga 999999999.9999999
+INFO  PgCarbon 1.2000000000000001e-14
+INFO  Conc->PgCarbon 1.2e-11
+INFO  Surface: Cflx PgCarbonPerYr
+INFO  Surface: Cflx PgCarbonPerYr
+INFO  Surface: Cflx PgCarbonPerYr
+INFO  Surface: Cflx PgCarbonPerYr
+INFO  Surface: Cflx PgCarbonPerYr
+INFO  Surface: Cflx PgCarbonPerYr
+INFO  Surface: Cflx PgCarbonPerYr
+INFO  Surface: Cflx PgCarbonPerYr
+INFO  Surface: Cflx PgCarbonPerYr
+INFO  Surface: Cflx PgCarbonPerYr
+INFO  Avg: Fer 1/giga
+INFO  Avg: Fer 1/giga
+INFO  Avg: Fer 1/giga
+INFO  Avg: Fer 1/giga
+INFO  Avg: Fer 1/giga
+INFO  Avg: Fer 1/giga
+INFO  Avg: Fer 1/giga
+INFO  Avg: Fer 1/giga
+INFO  Avg: Fer 1/giga
+INFO  Avg: Fer 1/giga
+INFO  Volume: PPT PgCarbonPerYr
+INFO  Volume: PPT PgCarbonPerYr
+INFO  Volume: PPT PgCarbonPerYr
+INFO  Volume: PPT PgCarbonPerYr
+INFO  Volume: PPT PgCarbonPerYr
+INFO  Volume: PPT PgCarbonPerYr
+INFO  Volume: PPT PgCarbonPerYr
+INFO  Volume: PPT PgCarbonPerYr
+INFO  Volume: PPT PgCarbonPerYr
+INFO  Volume: PPT PgCarbonPerYr
+INFO  Avg: TChl 1/giga
+INFO  Avg: TChl 1/giga
+INFO  Avg: TChl 1/giga
+INFO  Avg: TChl 1/giga
+INFO  Avg: TChl 1/giga
+INFO  Avg: TChl 1/giga
+INFO  Avg: TChl 1/giga
+INFO  Avg: TChl 1/giga
+INFO  Avg: TChl 1/giga
+INFO  Avg: TChl 1/giga
+INFO  Level: EXP PgCarbonPerYr
+INFO  Level: EXP PgCarbonPerYr
+INFO  Level: EXP PgCarbonPerYr
+INFO  Level: EXP gCarbonPerYr
+INFO  Level: EXP PgCarbonPerYr
+INFO  Level: EXP PgCarbonPerYr
+INFO  Level: EXP PgCarbonPerYr
+INFO  Level: EXP PgCarbonPerYr
+INFO  Level: EXP PgCarbonPerYr
+INFO  Level: EXP PgCarbonPerYr
+INFO  Data read from: /gpfs/data/greenocean/software/resources/breakdown/clq_basin_masks_ORCA.nc
+INFO  Run data for year 2062:     
+INFO  Cflx not found
+INFO  Cflx not found
+INFO  Cflx not found
+INFO  Cflx not found
+INFO  Cflx not found
+INFO  Cflx not found
+INFO  Cflx not found
+INFO  Cflx not found
+INFO  Cflx not found
+INFO  Cflx not found
+INFO  EXP not found
+INFO  EXP not found
+INFO  EXP not found
+INFO  Unit: gCarbonPerYr not found, using raw data
+INFO  EXP not found
+INFO  EXP not found
+INFO  EXP not found
+INFO  EXP not found
+INFO  EXP not found
+INFO  EXP not found
+INFO  EXP not found
+INFO  PPT not found
+INFO  PPT not found
+INFO  PPT not found
+INFO  PPT not found
+INFO  PPT not found
+INFO  PPT not found
+INFO  PPT not found
+INFO  PPT not found
+INFO  PPT not found
+INFO  PPT not found
+INFO  Not all of Fer are found in files, Fer not found
+INFO  Fer not found
+INFO  Not all of Fer are found in files, Fer not found
+INFO  Fer not found
+INFO  Not all of Fer are found in files, Fer not found
+INFO  Fer not found
+INFO  Not all of Fer are found in files, Fer not found
+INFO  Fer not found
+INFO  Not all of Fer are found in files, Fer not found
+INFO  Fer not found
+INFO  Not all of Fer are found in files, Fer not found
+INFO  Fer not found
+INFO  Not all of Fer are found in files, Fer not found
+INFO  Fer not found
+INFO  Not all of Fer are found in files, Fer not found
+INFO  Fer not found
+INFO  Not all of Fer are found in files, Fer not found
+INFO  Fer not found
+INFO  Not all of Fer are found in files, Fer not found
+INFO  Fer not found
+INFO  Not all of TChl are found in files, TChl not found
+INFO  TChl not found
+INFO  Not all of TChl are found in files, TChl not found
+INFO  TChl not found
+INFO  Not all of TChl are found in files, TChl not found
+INFO  TChl not found
+INFO  Not all of TChl are found in files, TChl not found
+INFO  TChl not found
+INFO  Not all of TChl are found in files, TChl not found
+INFO  TChl not found
+INFO  Not all of TChl are found in files, TChl not found
+INFO  TChl not found
+INFO  Not all of TChl are found in files, TChl not found
+INFO  TChl not found
+INFO  Not all of TChl are found in files, TChl not found
+INFO  TChl not found
+INFO  Not all of TChl are found in files, TChl not found
+INFO  TChl not found
+INFO  Not all of TChl are found in files, TChl not found
+INFO  TChl not found
+0 114
+copying output 2062
+cp: cannot stat ‘ORCA2_1m_20620101_20621231_grid_T.nc’: No such file or directory
+cp: cannot stat ‘ORCA2_1m_20620101_20621231_diad_T.nc’: No such file or directory
+cp: cannot stat ‘ORCA2_1m_20620101_20621231_ptrc_T.nc’: No such file or directory
+cp: cannot stat ‘ORCA2_1m_20620101_20621231_icemod.nc’: No such file or directory
+copying extra set up data and EMPave files
+Deleting local data if exists centrally
+1708200 4 312
+Deleting local data

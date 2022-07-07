@@ -1,0 +1,238 @@
+
+# --------------------------------------------------------------------------------
+# This file contains all the paths and parameter needed for a run of planktom on ADA.
+# This file is read in by setUpRun.sh.
+# Lines with a preceding # will be ignored.
+# links and parameterswill set by the name preceding the colon and the path after
+# and each will have an explanation as to what you're changing.
+# All runs will be on ADA and use NEMO v3.6 (including planktom5 runs)
+# no compilation of code is required as versioned copies of the code will be kept
+# in a source directory.
+# For development code, the option to replace the location of compiled code is available
+# 
+# Not all variables and paths will be used by all versions of the planktom.
+# 
+# This setup script is yours and you should make copies of it depending on how you 
+# want to run your models. e.g. setUpData_climatology.dat or setUpData_TOM5_JRA55_staticCO2.dat
+# 
+# The structure of each path or variable is as follows
+# name:value
+# any name containing a "." will be a link to a file, otherwise it is a path or value
+# --------------------------------------------------------------------------------
+
+
+#==============   RUN COMPONENTS   ====================================================
+
+# model version to run (options are TOM5, TOM10, TOM12, dev. "DEV" is a developmental version that's being worked on)
+model:dev
+
+# starting year for the run
+# forcing data starts in 1948 (NCEP) and 1958 (JRA) so data before then will be a looping 
+# year of 1980 for spin-up purposes
+yearStart:1948
+yearEnd:2100
+
+# CO2 (VARIABLE or STATIC)
+CO2:STATIC
+
+# Dynamic or bias run (DYNAMIC or BIAS) 
+type:BIAS
+
+# Forcing (NCEP or JRA, ERA)
+# really a ERA run just using these tags
+forcing:JRA
+
+# tidying up diskspace options
+# period where we don't want to keep outputs/restarts
+spinupStart:1750
+spinupEnd:1948
+# keep restarts and output frequency (years)
+spinupRestartKeepFrequency: 10
+spinupOutputKeepFrequency: 10
+runRestartKeepFrequency: 5
+runOutputKeepFrequency: 1
+# flags for keeping respective files (1=keep, 0=delete)
+keepGrid_T:1
+keepDiad:1
+keepPtrc:1
+keepIce:1
+
+# the parameter file for defining the run breakdown totals.
+breakdown_parms:/gpfs/home/yzh17dvu/scratch/RunBreakdown/breakdown_dashboard
+
+#==========================================================================================
+# base directory for creating the model run data - this is where all your run data will be kept
+# the cleaning up scripts will copy data to a central area but maintain links here to keep scratch areas
+# free from containing full run data. 
+basedir:~/scratch/ModelRuns/
+
+
+#==============   INPUT RESOURCES   ===========================================
+
+# Restart files, files from which the model is started. These can be generic. 
+# passive tracers
+# restart_trc.nc:/gpfs/data/greenocean/software/resources/ModelResources/RestartFiles/restart_17621231_trc_GLODAPv2.nc
+# restart_trc.nc:/gpfs/data/greenocean/software/resources/ModelResources/RestartFiles/restart_18991231_trc_GLODAPv2_mementoN2X_O2Bianchi_pPFTN.nc
+# for dev
+#restart_trc.nc:/gpfs/data/greenocean/software/resources/ModelResources/RestartFiles/restart_18991231_trc_GLODAPv2_O2Bianchi_PIC5.nc
+
+# ADA12_ET_SIHM restat 2011
+# restart_trc.nc:/gpfs/home/yzh17dvu/scratch/ModelRuns/merge/ADA12_ET_SIHM/merged-restart_trc.nc
+
+# ice
+# restart_ice_in.nc:/gpfs/data/greenocean/software/resources/ModelResources/RestartFiles/restart_ice_v3.6.nc
+
+# ADA12_ET_SIHM restat 2011
+# restart_ice_in.nc:/gpfs/home/yzh17dvu/scratch/ModelRuns/merge/ADA12_ET_SIHM/merged-restart_ice.nc
+
+# restart for the physics parameters
+# for dev
+# restart.nc:/gpfs/data/greenocean/software/resources/ModelResources/RestartFiles/restart_18991231_opa_obs_v3.6_ncep.nc
+
+# restart.nc:/gpfs/data/greenocean/software/resources/ModelResources/RestartFiles/restart_19191231_opa_obs_v3.6_ncep.nc
+# ADA12_ET_SIHM restat 2011
+# restart.nc:/gpfs/home/yzh17dvu/scratch/ModelRuns/merge/ADA12_ET_SIHM/merged-restart.nc
+
+
+# Evaporation and Precipitation balancing file
+# This needs to be for previous year, if using restarts
+# EMPaveFile:/gpfs/data/greenocean/software/resources/ModelResources/RestartFiles/EMPave_1749.dat
+# EMPaveFile:/gpfs/data/greenocean/software/resources/ModelResources/RestartFiles/EMPave_1749.dat
+# EMPaveFile:/gpfs/home/yzh17dvu/scratch/ModelRuns/merge/ADA12_ET_SIHM/EMPave_2010.dat
+
+
+# A file, a 2D integer used to increase the horizontal eddy viscosity along western boundary in the equatorial strip 20?S-20?N
+ahmcoef.nc:/gpfs/data/greenocean/software/resources/ModelResources/EddyViscCoeff/ahmcoef.nc
+
+# Atmospheric CO2 levels updated yearly. 
+# Most recent: atmco2_dw_edit_4200_v2.dat; Constant CO2 from 1750 (278ppm) atmco2_dw_edit_4200_v2_CONSTANT_1750.dat
+# which is used is controlled by the CO2 variable above
+atmco2.dat.variable:/gpfs/data/greenocean/software/resources/ModelResources/AtmosCO2/atmco2_dw_edit_4200_v4.dat
+atmco2.dat.static:/gpfs/data/greenocean/software/resources/ModelResources/AtmosCO2/atmco2_dw_edit_4200_v3_CONSTANT_1750.dat
+# cfcs
+atmco2cfc.dat:/gpfs/data/greenocean/software/resources/ModelResources/AtmosCO2/atmco2cfc_NEEDS_WORK.dat
+# C14 data
+atmb14.dat:/gpfs/data/greenocean/software/resources/ModelResources/C14/atmb14.dat
+atmc14.dat:/gpfs/data/greenocean/software/resources/ModelResources/C14/atmc14.dat
+
+
+# Bathmetry files, the bathymetry in meters. This is referenced by the model but the data not used
+bathy_level.nc:/gpfs/data/greenocean/software/resources/ModelResources/Bathymetry/bathy_level.nc
+# the bathymetry in levels, the data in this file IS used in setting up the domains and defining the 
+# coastal masks and combining with dust input
+bathy_meter.nc:/gpfs/data/greenocean/software/resources/ModelResources/Bathymetry/bathy_meter.nc
+bathy.orca.nc:/gpfs/data/greenocean/software/resources/ModelResources/Bathymetry/bathy.orca.nc
+basin_mask.nc:/gpfs/data/greenocean/software/resources/ModelResources/Bathymetry/basin_mask.nc
+
+# Scale factors e[123][tuvwf] and geographical glam[tuvwf] and gphi[tuvwf] location of each grid points T- U- V- W- and F-
+coordinates.nc:/gpfs/data/greenocean/software/resources/ModelResources/GridCoordinates/coordinates.nc
+
+# NODC (Levitus) World Ocean Atlas interpolated on ORCA grid
+# Atlas (Levitus) of potenial temperature (T fluid would attain if brought to standard Pressure (1000hPa)) and salinity
+data_1m_potential_temperature_nomask.nc:/gpfs/data/greenocean/software/resources/ModelResources/Atlas/WOA01_ORCA2_1m_potemp.nc 
+data_1m_salinity_nomask.nc:/gpfs/data/greenocean/software/resources/ModelResources/Atlas/WOA01_ORCA2_1m_sal.nc 
+
+# surface dust deposition - source of Fe
+dust.orca.nc:/gpfs/data/greenocean/software/resources/ModelResources/Dust/dust.Jickells2005.times035.ORCA.nc
+# atmospheric input of nitrogen
+ndeposition.nc:/gpfs/data/greenocean/software/resources/ModelResources/Dust/ndeposition.orca.nc
+
+# river run off, souce of C and nutrients
+# looks to hvae been calculated from code run in here /gpfs/data/greenocean/ClareE/river/, origin of data to be investigated
+river.nc:/gpfs/data/greenocean/software/resources/ModelResources/River/river.nc 
+# runoff, possibly created from data_1m_salinity_nomask file, origin of data to be investigated
+runoff_core_monthly.nc:/gpfs/data/greenocean/software/resources/ModelResources/River/runoff_core_monthly.nc
+
+# geothermal heating - constant geothermal heat flux (mW/m2)
+geothermal_heating.nc:/gpfs/data/greenocean/software/resources/ModelResources/Geothermal/geothermal_heating.nc 
+
+# tides files / heat flow
+K1rowdrg.nc:/gpfs/data/greenocean/software/resources/ModelResources/Tides/K1rowdrg.nc
+M2rowdrg.nc:/gpfs/data/greenocean/software/resources/ModelResources/Tides/M2rowdrg.nc
+
+# chlorophyll data taken with seawifs project. (more at /gpfs/data/greenocean/seawifs/)
+chlorophyll.nc:/gpfs/data/greenocean/software/resources/ModelResources/Chlorophyll/chlorophyll.nc
+
+# a mask file for indonesian pacific region
+mask_itf.nc:/gpfs/data/greenocean/software/resources/ModelResources/Masks/mask_itf.nc
+
+# restoration
+ssr.nc:/gpfs/home/yzh17dvu/scratch/ModelRuns/ORCA025/resources/intObsIntoRestart/ssr_lowres.nc
+
+#==============   MODEL COMPONENTS   ====================================================
+
+# The xios server that handles the input-output-manager
+xios_server.exe:/gpfs/software/ada/xios/1.0/gcc-openmpi/xios_server.exe 
+
+# the executeable for the model, this is compiled and if you want to compile your own, just replace this path
+# with the location
+opa_TOM5:/gpfs/data/greenocean/software/source/planktom/nemo_planktom/nemo_v3.6/TOM5/CONFIG/ORCA2_LIM_PlankTOM/BLD/bin/nemo.exe 
+opa_TOM10:/gpfs/data/greenocean/software/source/planktom/nemo_planktom/nemo_v3.6/TOM5/CONFIG/ORCA2_LIM_PlankTOM/BLD/bin/nemo.exe 
+opa_TOM12:/gpfs/data/greenocean/software/source/planktom/nemo_planktom/nemo_v3.6/TOM12/CONFIG/ORCA2_LIM_PlankTOM/BLD/bin/nemo.exe 
+
+# opa_dev:/gpfs/home/yzh17dvu/scratch/test_ada_compile/NEMO/nemo_planktom/nemo_v3.6/TOM12_PIHM/CONFIG/ORCA2_LIM_PlankTOM/BLD/bin/nemo.exe 
+# opa_dev:/gpfs/home/yzh17dvu/scratch/test_ada_compile/NEMO/nemo_planktom/nemo_v3.6/TOM12_SIHM_PHYS/CONFIG/ORCA2_LIM_PlankTOM/BLD/bin/nemo.exe 
+# opa_dev:/gpfs/home/yzh17dvu/scratch/test_ada_compile/NEMO/nemo_planktom/nemo_v3.6/TOM12_DEBUG_C14/CONFIG/ORCA2_LIM_PlankTOM/BLD/bin/nemo.exe 
+#opa_dev:/gpfs/home/yzh17dvu/scratch/test_ada_compile/NEMO/nemo_planktom/nemo_v3.6/TOM12_LIM3_HR2/CONFIG/ORCA2_LIM_PlankTOM/BLD/bin/nemo.exe 
+
+opa_dev:/gpfs/home/yzh17dvu/scratch/test_ada_compile/NEMO/nemo_planktom/nemo_v3.6/TOM12_LIM3_LR1/CONFIG/ORCA2_LIM_PlankTOM/BLD/bin/nemo.exe
+# opa_dev:/gpfs/home/yzh17dvu/scratch/ModelRuns/TOM12_DW_WD14/opa_dev
+# opa_dev:/gpfs/home/e031/scratch/ADA12_ET_SIHM/opa
+
+# opa_dev:/gpfs/home/e031/scratch/TOM12_ET_PIHM/opa
+
+# ------ NAMELISTS -----
+# The NAMELIST of varaibles that control the run (e.g. how the model starts, defined by the restart file?)
+# # config nameslist (planktom independant)
+namelist_cfg:/gpfs/home/yzh17dvu/scratch/test_ada_compile/NEMO/nemo_planktom/nemo_v3.6/TOM12_PIHM/CONFIG/ORCA2_LIM_PlankTOM/EXP00/namelist_cfg
+
+# Also what tracers are included in the model (sn_tracer)
+# namelist_top_ref:/gpfs/home/yzh17dvu/scratch/test_ada_compile/NEMO/nemo_planktom/nemo_v3.6/TOM12_PIHM/CONFIG/ORCA2_LIM_PlankTOM/EXP00/namelist_top_ref_tom12_pihm
+# C14
+namelist_top_ref:/gpfs/home/yzh17dvu/scratch/test_ada_compile/NEMO/nemo_planktom/nemo_v3.6/TOM12_DEBUG_C14/CONFIG/ORCA2_LIM_PlankTOM/EXP00/namelist_top_ref_SIHM_C14
+namelist_c14b:/gpfs/home/yzh17dvu/scratch/test_ada_compile/NEMO/nemo_planktom/nemo_v3.6/TOM12_SIHM_C14/CONFIG/ORCA2_LIM_PlankTOM/EXP00/namelist_c14b
+
+# the namelist that has variables more specific to the run, eg forcing 
+namelist_ref_ncep:/gpfs/home/yzh17dvu/scratch/test_ada_compile/NEMO/nemo_planktom/nemo_v3.6/TOM12_PIHM/CONFIG/ORCA2_LIM_PlankTOM/EXP00/namelist_ref_ncep_new
+# namelist_ref_jra:/gpfs/home/yzh17dvu/scratch/test_ada_compile/NEMO/nemo_planktom/nemo_v3.6/TOM12_PIHM/CONFIG/ORCA2_LIM_PlankTOM/EXP00/namelist_ref_ncep_new
+# namelist_ref_jra:/gpfs/home/yzh17dvu/scratch/test_ada_compile/NEMO/nemo_planktom/nemo_v3.6/TOM12_DEBUG_C14/CONFIG/ORCA2_LIM_PlankTOM/namelist_ref_jraso_CORE
+namelist_ref_jra:/gpfs/home/yzh17dvu/scratch/test_ada_compile/NEMO/nemo_planktom/nemo_v3.6/TOM12_DEBUG_C14/CONFIG/ORCA2_LIM_PlankTOM/namelist_ref_era_CORE_6hr
+
+# These namelist versions have the parameter change for SPINNING UP. The first year needs to be run with the date set in the namelist_ref variable nn_date0 and
+# the nn_rstctl flag set to 0. Run one year and then copy the namelist above in place. nn_rstctl flag then set to 2, taking date from existing restart file.
+namelist_ref_ncep_first_year:/gpfs/home/yzh17dvu/scratch/test_ada_compile/NEMO/nemo_planktom/nemo_v3.6/TOM12_PIHM/CONFIG/ORCA2_LIM_PlankTOM/EXP00/namelist_ref_ncep_new_first_year
+# namelist_ref_jra_first_year:/gpfs/home/yzh17dvu/scratch/test_ada_compile/NEMO/nemo_planktom/nemo_v3.6/TOM12_PIHM/CONFIG/ORCA2_LIM_PlankTOM/EXP00/namelist_ref_ncep_new_first_year
+namelist_ref_jra_first_year:/gpfs/home/yzh17dvu/scratch/test_ada_compile/NEMO/nemo_planktom/nemo_v3.6/TOM12_DEBUG_C14/CONFIG/ORCA2_LIM_PlankTOM/namelist_ref_era_first_year_CORE_6hr
+
+# for bias runs we need the model to use forcing data that is a loop of a single year (e.g. 1980)
+namelist_ref_ncep_looping:/gpfs/home/yzh17dvu/scratch/test_ada_compile/NEMO/nemo_planktom/nemo_v3.6/TOM12_PIHM/CONFIG/ORCA2_LIM_PlankTOM/EXP00/namelist_ref_ncep_new_looping
+namelist_ref_jra_looping:/gpfs/home/yzh17dvu/scratch/test_ada_compile/NEMO/nemo_planktom/nemo_v3.6/TOM12_PIHM/CONFIG/ORCA2_LIM_PlankTOM/EXP00/namelist_ref_ncep_new_looping
+
+# short namelist of config namelist ids
+namelist_top_cfg:/gpfs/home/yzh17dvu/scratch/test_ada_compile/NEMO/nemo_planktom/nemo_v3.6/TOM12_PIHM/CONFIG/ORCA2_LIM_PlankTOM/EXP00/namelist_top_cfg
+
+# namelist of passive tracer information specific to planktom
+namelist.trc.sms:/gpfs/home/yzh17dvu/scratch/test_ada_compile/NEMO/nemo_planktom/nemo_v3.6/TOM12_PIHM/CONFIG/ORCA2_LIM_PlankTOM/EXP00/namelist.trc.sms_tom12
+
+# namelist for information specific to ice
+namelist_ice_cfg:/gpfs/home/yzh17dvu/scratch/test_ada_compile/NEMO/nemo_planktom/nemo_v3.6/TOM12_PIHM/CONFIG/ORCA2_LIM_PlankTOM/EXP00/namelist_ice_cfg 
+namelist_ice_ref:/gpfs/home/yzh17dvu/scratch/test_ada_compile/NEMO/nemo_planktom/nemo_v3.6/TOM12_PIHM/CONFIG/ORCA2_LIM_PlankTOM/EXP00/namelist_ice_ref 
+
+# ------ XML -----
+# definition of all the fields used
+# field_def.xml:/gpfs/data/greenocean/software/source/planktom/nemo_planktom/nemo_v3.6/TOM12/CONFIG/ORCA2_LIM_PlankTOM/EXP00/field_def_tom12piic.xml
+# field_def.xml:/gpfs/home/yzh17dvu/scratch/test_ada_compile/NEMO/nemo_planktom/nemo_v3.6/TOM12_PIHM/CONFIG/ORCA2_LIM_PlankTOM/EXP00/field_def_tom12_pihm.xml
+#  C14
+field_def.xml:/gpfs/home/yzh17dvu/scratch/test_ada_compile/NEMO/nemo_planktom/nemo_v3.6/TOM12_SIHM_C14/CONFIG/ORCA2_LIM_PlankTOM/EXP00/field_def_tom12piicc14.xml
+
+
+# which fields are output by the model
+# iodef.xml:/gpfs/home/yzh17dvu/scratch/ModelRuns/setup/iodef_tom12_add.xml 
+# iodef.xml:/gpfs/data/greenocean/software/source/planktom/nemo_planktom/nemo_v3.6/TOM12/CONFIG/ORCA2_LIM_PlankTOM/EXP00/iodef_tom12.xml 
+iodef.xml:/gpfs/home/yzh17dvu/scratch/test_ada_compile/NEMO/nemo_planktom/nemo_v3.6/TOM12_PIHM/CONFIG/ORCA2_LIM_PlankTOM/EXP00/iodef_tom12_pihm.xml
+
+# how the domains (each area that a CPU calculates) are definied
+domain_def.xml:/gpfs/home/yzh17dvu/scratch/test_ada_compile/NEMO/nemo_planktom/nemo_v3.6/TOM12_PIHM/CONFIG/ORCA2_LIM_PlankTOM/EXP00/domain_def.xml
+
+
+

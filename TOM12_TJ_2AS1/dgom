@@ -1,0 +1,89 @@
+#!/bin/sh
+#SBATCH --mail-type=ALL
+#SBATCH --qos=ib
+#SBATCH -p ib-24-96
+#SBATCH -t 36:00:00 
+#SBATCH --job-name=plank
+#SBATCH -o planktom-GR.log
+#SBATCH -e planktom-ER.log  
+#SBATCH --mem 8G
+#SBATCH --ntasks=48    
+#SBATCH --ntasks-per-node=24
+
+. /etc/profile
+
+module purge
+module add gcc/9.2.0 netcdf/4.7.4/parallel/gcc-openmpi hdf5/1.10.6/gcc-openmpi java mpi/openmpi/4.0.3/gcc/ib perl
+module list
+set -x
+
+# number of cups set to 48 in namelists and above in SLURM
+cpus=48
+
+echo "---- Inputs " $yearToRun $yearEnd $modelDir $simulation $Model
+
+YEARP=$YEARN
+
+cd $modelDir
+
+export MYAPP=./opa
+
+
+# sbatch -J tidy --export=ALL,modelDir=${modelDir},yearToTidy=${yearToRun},Model=${Model} tidyupJob
+
+date
+START=`date`
+mpirun -np $cpus $MYAPP
+date
+FINISH=`date`
+
+
+# eval YEARN=`expr $YEARN + 1`
+# export YEARP YEARN
+yearPrevious=$yearToRun
+yearToRun=$((yearToRun+1))
+
+timestep=`awk '{printf "%.8d\n", $0}' time.step`
+mv time.step old.time.step
+
+# if [ -f ORCA2_${timestep}_restart_0000.nc ]; then
+#   bsub -Jptom_totals < run_totals.sh
+# fi
+
+
+if [ -f ORCA2_${timestep}_restart_0000.nc ]; then
+    mv restart_trc.nc restart_trc_first_year.nc
+    mv restart.nc restart_first_year.nc
+    mv restart_ice_in.nc restart_ice_in_first_year.nc
+    mv EMPave.dat EMPave_${yearPrevious}.dat
+
+    # link namelist so continues after first year, set this each subsequent year
+    ln -fs namelist_ref_all_years namelist_ref
+
+
+    # link the restart file to used for the next year to the one just completed.
+    for (( i=0; i<$cpus; i++ ))
+    do
+        if (( i < 10 )); then
+	        proc=0$i
+        else
+            proc=$i
+        fi
+        ln -fs ORCA2_${timestep}_restart_00${proc}.nc restart_00${proc}.nc
+        ln -fs ORCA2_${timestep}_restart_ice_00${proc}.nc restart_ice_in_00${proc}.nc
+        ln -fs ORCA2_${timestep}_restart_trc_00${proc}.nc restart_trc_00${proc}.nc
+    done
+
+    ln -fs EMPave_${yearPrevious}.dat EMPave_old.dat
+
+    # submit tidy up routines
+    sbatch -J tidy --export=ALL,modelDir=${modelDir},yearToTidy=${yearPrevious},Model=${Model} tidyupJob
+
+    if [ -f submit.$yearToRun ]; then
+        sbatch -J s${simulation}${yearToRun}< submit.$yearToRun
+    else
+        if [ $yearPrevious -lt $yearEnd ]; then
+        sbatch -J ${simulation}$yearToRun < dgom
+        fi
+    fi
+fi

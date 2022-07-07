@@ -38,7 +38,8 @@ pointsPerYear=5475
 model=$(basename "$PWD")
 id=${model: -4}
 echo "Tidying up year: $1 to $2 for $model"
-baseDir="/gpfs/data/greenocean/software/runs/"
+# baseDir="/gpfs/data/greenocean/software/runs/"
+baseDir="/gpfs/afm/greenocean/software/runs/"
 
 # make central area
 if [ ! -d $baseDir$model ]; then
@@ -90,6 +91,12 @@ do
         if [[ $keepPtrc -eq 1 ]]; then cp ORCA2_1m_${y}0101_${y}1231_ptrc_T.nc $baseDir$model; fi
         if [[ $keepIce -eq 1 ]]; then cp ORCA2_1m_${y}0101_${y}1231_icemod.nc $baseDir$model; fi
         if [[ $keepGrid_V -eq 1 ]]; then cp ORCA2_1m_${y}0101_${y}1231_grid_V.nc $baseDir$model; fi
+
+        echo "copying extra set up data and EMPave files"
+        cp EMPave_${y}.dat $baseDir$model
+        cp namelist* $baseDir$model
+        cp *xml $baseDir$model
+        cp setUpData*dat $baseDir$model
 
         echo "Deleting local data if exists centrally"
         rm -f ORCA2_1m_${y}0101_${y}1231_grid_*.nc
